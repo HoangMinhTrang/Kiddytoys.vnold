@@ -1,320 +1,1477 @@
-
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="Chợ Game Touch - Nơi Mua Sắm, Trao Đổi Thời Trang, Vật Liệu. Duy Nhất Tại Việt Nam" />
+<script type="text/javascript" src="assets/front/js/html5-fix.js"></script>
+<!--
+thẻ đường dẫn tuyệt đối
+<base href="http://Kiddytoys.vn/" />
+ -->
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Chợ Game Touch - Nơi Mua Sắm, Trao Đổi Thời Trang, Vật Liệu. Duy Nhất Tại Việt Nam" />
-    <meta property="og:type" content="product" />
-    <meta property="og:url" content="http://chogametouch.azurewebsites.net/" />
-    <meta property="og:image" content="images/logo.png" />
-    <meta property="og:description" content="Chợ Game Touch - Nơi Mua Sắm,Trao Đổi Thời Trang, Vật Liệu. Duy Nhất Tại Việt Nam" />
-    <meta property="og:site_name" content="Chogametouch.azurewebsites.net" />
+<link rel="icon" href="assets/front/img/icon.png" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Thiên Đường Đồ Chơi Trẻ Em</title>
+<meta name="description" content="Kiddytoys là trang thương mại điện tử chuyên bán các mặt hàng đồ chơi trẻ em, đa mẫu mã, chủng loại." />
+<meta name="keywords" content="" />
+<meta name="Title" content="Thiên Đường Đồ Chơi Trẻ Em" />
 
-    <title>Chợ Game Touch - Nơi Mua Sắm,Trao Đổi Thời Trang, Vật Liệu. Duy Nhất Tại Việt Nam</title>
-      <!-- sửa shortcut icon -->
-	<link href="images/favicon.ico" rel="shortcut icon"  type="image/x-icon"/>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<!-- [if lt IE 9] -->
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <!-- [endif] -->
-      <!-- css từ trang của thầy -->
-    <link href="css/touch.css" rel="stylesheet"/>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:url" content="http://Kiddytoys.vn/" />
+<meta property="og:title" content="Thiên Đường Đồ Chơi Trẻ Em" />
+<meta property="og:description" content="Kiddytoys là trang thương mại điện tử chuyên bán các mặt hàng đồ chơi trẻ em, đa mẫu mã, chủng loại." />
+<meta itemprop="priceCurrency" content="VNĐ" />
+<meta content="index, follow" name="robots">
+<!--CSS -->
+<link href="assets/front/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/js/slick/slick.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/js/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/css/social-icons.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/css/fakeLoader.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/css/layout-home.css" rel="stylesheet" type="text/css" />
+<link href="assets/front/css/responsive.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+	var site_url = 'http://Kiddytoys.vn/';
+</script>
+<script type="text/javascript" src="assets/front/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="assets/front/js/fakeLoader.min.js"></script>
+<script type="text/javascript" src="assets/front/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/front/js/jquery.sticky.js"></script>
+<script type="text/javascript" src="assets/front/js/function.js"></script>
+<script type="text/javascript" src="assets/front/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/front/js/app.js"></script>
 </head>
-<body>
-    <div class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <form action="/Post/Filter">
-            <div class="input-group" style="width:100%; margin-top:25px; margin-bottom:5px;">
-                <div class="input-group-btn">
-                    <button id="cbSearchCategory" name="category" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Tất Cả <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu columns" aria-labelledby="cbSearchCategory">
-                        <li><a onclick="$('#cbSearchCategory').html('Tất Cả &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;')">Tất Cả</a></li>
-                            <li><a onclick="$('#cbSearchCategory').html('Thời Trang &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;')">Thời Trang</a></li>
-                            <li><a onclick="$('#cbSearchCategory').html('Thời Trang&gt;Nam &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;')">Thời Trang &gt; Nam</a></li>
-                            <li><a onclick="$('#cbSearchCategory').html('Thời Trang&gt;Nữ &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;')">Thời Trang &gt; Nữ</a></li>
-                            <li><a onclick="$('#cbSearchCategory').html('Đồ Hợp Thành &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;')">Đồ Hợp Thành</a></li>
-                            <li><a onclick="$('#cbSearchCategory').html('Dịch Vụ &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;')">Dịch Vụ</a></li>
-                    </ul>
-                </div>
-                <input type="text" class="form-control" autofocus="true" placeholder="Tìm kiếm theo tên sản phẩm..." name="keyword" id="keyword">
-                <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-    <div class="navbar navbar-inverse" style="margin:0" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" style="margin-top:-30px" href="/"><img src="images/logo.png" width="100" height="80" /></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
 
-                    <li><a href="/">Tất Cả</a></li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Thời Trang <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/Post/Filter?Category=Thời Trang">Tất Cả</a></li>
-                                <li><a href="/Post/Filter?Category=Thời Trang;Nam">Thời Trang &gt; Nam</a></li>
-                                <li><a href="/Post/Filter?Category=Thời Trang;Nữ">Thời Trang &gt; Nữ</a></li>
-                        </ul>
-                    </li>
-					<li><a href="ĐồHợpThành">Đồ Hợp Thành</a></li>
-					<li><a href="DịchVụ">Dịch Vụ</a></li>
-					<li><a href="DịchVụ">Khác</a></li>
-
-                </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/Account/Login">Đăng Nhập</a></li>
-                    </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row body-content">
-        <div class="hidden-xs hidden-sm col-md-2 col-lg-2" style="background-color:#E4E9E9;">
-            <p></p>
-<div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <ul style="list-style-type: none">
-            <li><a style="color:#343535" href="/Post/Filter?Category=Thời Trang"><strong>Thời Trang</strong></a></li>
-                    <li><a style="color:#343535" href="/Post/Filter?Category=Thời Trang;Nam"> Nam</a></li>
-                    <li><a style="color:#343535" href="/Post/Filter?Category=Thời Trang;Nữ"> Nữ</a></li>
-        </ul>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <ul style="list-style-type: none">
-            <li><a style="color:#343535" href="Đồ Hợp Thành"><strong>Đồ Hợp Thành</strong></a></li>
-        </ul>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <ul style="list-style-type: none">
-            <li><a style="color:#343535" href="Dịch Vụ"><strong>Dịch Vụ</strong></a></li>       
-        </ul>
-    </div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <ul style="list-style-type: none">
-            <li><a style="color:#343535" href="Khác"><strong>Khác</strong></a></li>       
-        </ul>
-    </div>
-	
-</div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" style="background-color:white;">
+<body lang="vi" class="home">
+<div id="fakeLoader"></div>
+<div class="flbackdrop"></div>
+	<header id="header" class="clearfix">
+    	<div class="clearfix link-notify">
+		    <div class="container">
+		        <div class="row">
+		            <ul class="col-xs-12">
+		                <li>
+		                    <i class="glyphicon glyphicon-phone"></i>
+		                    Dịch vụ khách hàng: <b>(+84) 969 53 57 56</b>
+		                </li>
+		                <li class="hidden-xs">
+		                    <i class="glyphicon glyphicon-bed"></i>
+		                    <a target="_blank" href="http://Kiddytoys/mua-sam-online/giao-hang-va-nhan-hang/">Giao Hàng Nhanh</a>
+		                </li>
+		                <!-- -->
+		                <li class="hidden-xs">
+		                    <i class="glyphicon glyphicon-edit"></i>
+		                        <a target="_blank" href="http://Kiddytoys/mua-sam-online/ca-nhan-hoa-truc-tuyen/">Cá Nhân Hoá Trực Tuyến</a>
+		                </li>
+		                    <!-- -->
+		                <li class="hidden-xs">
+		                    <i class="glyphicon glyphicon-refresh"></i>
+		                        <a target="_blank" href="http://Kiddytoys/khach-hang/cam-ket-hai-long/">Cam Kết Hài Lòng</a>
+		                </li>
+		                    <!-- -->
+		            </ul>
+		            
+		                <!-- -->
             
-
-<br />
-<p><a href="/Post/Create" class="btn btn-danger pull-right"><i class="glyphicon glyphicon-pencil"></i> Đăng Tin Miễn Phí</a></p>
-<span class="clearfix"></span>
-<!-- Display error message -->
-
-<!-- Products will be rendered by partial views -->
-<div id="divProduct">
-    <hr class="hr-purple" />
-        <div class="row product-box hidden-xs">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <center><a href="/Post/Details/6236" target="_blank"><img class="img-responsive product-image-thumb" src="images\trang.jpg" /></a></center> 
-        </div>
-        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            <p><small><a style="color:black" href="/Post/Details/6236" target="_blank"><span class="label label-default">Nữ</span><strong> Tát Y</strong></a></small><p>
             
-            <p><small>Người bán: aries</small></p>
-            <p><small>Ngày đăng: 2016-10-05 14:20</small></p>
-            <p>
-                <small class="navigation">
-                    Loại:
-                        <a style="color:black" href="/Post/Filter?Category=Thời Trang">Thời Trang >></a>
-                        <a style="color:black" href="/Post/Filter?Category=Thời Trang;Nữ">Nữ >></a>
-						<a style="color:black" href="/Post/Filter?Category=Đồ Hợp Thành">Đồ Hợp Thành >></a>
-                </small>
-            </p>
-            <p><small>Giá: <strong>1.000.000 ₫</strong></small></p>
-            <p><small>Mô tả: Đồ hợp thành mới, đẹp  <a href="/Post/Details/6236" target="_blank" class="btn btn-xs btn-link" role="button"> -> xem thêm</a></small></p>
-        </div>
-    </div>
-    <div class="row product-box hidden-sm hidden-md hidden-lg">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p><small><a style="color:black" href="/Post/Details/6236" target="_blank"><span class="label label-default">Nữ</span><strong> Tát Y </strong></a></small><p>
-        </div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-            <p><small>Người bán: aries</small></p>
-            <p><small>Ngày đăng: 2016-10-05 14:20</small></p>
-            <p>
-                <small class="navigation">
-                    Loại:
-                        <a style="color:black" href="/Post/Filter?Category=Thời Trang">Thời Trang >></a>
-                        <a style="color:black" href="/Post/Filter?Category=Thời Trang;Nữ">Nữ >></a>
-						<a style="color:black" href="/Post/Filter?Category=Đồ Hợp Thành">Đồ Hợp Thành >></a>
-                </small>
-            </p>
-            <p><small>Giá: <strong>1.000.000 ₫</strong></small></p>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-            <center><a href="/Post/Details/6236" target="_blank"><img class="img-responsive product-image-thumb" src="images\trang1.jpg" /></a></center> 
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p><small>Mô tả: Đồ hợp thành cực hiếm <a href="/Post/Details/6236" target="_blank" class="btn btn-xs btn-link" role="button"> -> xem thêm</a></small></p>
-        </div>
-    </div>
-    <hr class="hr-gray" />
-    <div class="row product-box hidden-xs">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <center><a href="/Post/Details/6235" target="_blank"><img class="img-responsive product-image-thumb" src="images\image02.jpg" /></a></center> 
-        </div>
-        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            <p><small><a style="color:black" href="/Post/Details/6235" target="_blank"><span class="label label-default">Đồ Hợp Thành</span><strong> Vintage car</strong></a></small><p>
-            
-            <p><small>Người bán: aries</small></p>
-            <p><small>Ngày đăng: 2016-10-05 14:17</small></p>
-            <p>
-                <small class="navigation">
-                    Loại:
-					<a style="color:black" href="/Post/Filter?Category=Đồ Hợp Thành">Đồ Hợp Thành >></a>
-                </small>
-            </p>
-            <p><small>Giá: <strong>1.700.000 ₫</strong></small></p>
-            <p><small>Mô tả: Xe cổ hợp thành hiếm, siêu sang chảnh... <a href="/Post/Details/6235" target="_blank" class="btn btn-xs btn-link" role="button"> -> xem thêm</a></small></p>
-        </div>
-    </div>
-    <div class="row product-box hidden-sm hidden-md hidden-lg">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p><small><a style="color:black" href="/Post/Details/6235" target="_blank"><span class="label label-default">Đồ Hợp Thành</span><strong> Vintage car</strong></a></small><p>
-        </div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-            <p><small>Người bán: aries</small></p>
-            <p><small>Ngày đăng: 2016-10-05 14:17</small></p>
-            <p>
-                <small class="navigation">
-                    Loại:
-                        <a style="color:black" href="/Post/Filter?Category=Đồ Hợp Thành">Đồ Hợp Thành >></a>
-                </small>
-            </p>
-            <p><small>Giá: <strong>1.700.000 ₫</strong></small></p>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-            <center><a href="/Post/Details/6235" target="_blank"><img class="img-responsive product-image-thumb" src="D:\cho-game-touch\images\image02.jpg" /></a></center> 
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p><small>Mô tả: Xe cổ hợp thành hiếm, siêu sang chảnh... <a href="/Post/Details/6235" target="_blank" class="btn btn-xs btn-link" role="button"> -> xem thêm</a></small></p>
-        </div>
-    </div>
-    
-    <hr class="hr-gray" />
+		        </div>
+		    </div>
+		</div>
+		    <!-- -->
 
-</div>
-
-<a id="btnLoadMore" class="btn btn-lg btn-danger btn-group-justified" role="button">Xem thêm sản phẩm >></a>
-<p></p>
-
-        </div>
-    </div>
-    <div id="goTop"></div>
-    <div class="footer" style="color:#aeaeae">
-        <br />
+<div class="clearfix">
+    <div class="container">
         <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <ul style="list-style-type: none">
-            <li><a style="color:#aeaeae" href="Giới Thiệu"><strong>Giới Thiệu</strong></a></li>
-        </ul>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <ul style="list-style-type: none">
-            <li><a style="color:#aeaeae" href="Chính Sách"><strong>Chính Sách</strong></a></li>
-        </ul>
+            
+            <div class="logo col-xs-12 col-sm-3">
+                <a href="http://Kiddytoys.vn/">
+                    <img src="assets/front/img/logokid.png" alt="" title="" class="img-responsive" />
+                </a>
+            </div>
+            <!-- -->
+            <div class="col-xs-12 col-sm-9 header-group-box hidden-xs">                
+                <div class="form-search hidden-xs">
+                    <form action="http://Kiddytoys.vn/qua-tang/search.html" method="get">
+                        <input type="text" name="q" value="" placeholder="Bạn đang cần tìm..."/>
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+            </div>                
+                    <!-- -->
+                <ul id="hcart-group">
+                    <li > 
+                        <div class="h_usercontrol">
+                            <button type="button" >
+                                <i class="fa fa-user icon"></i>
+                                
+                                <span>
+                                    <b>Tài Khoản</b> 
+                                </span>
+                        	</button>
+                        	<div class="control_usernav">
+                                <ul class="clearfix" role="menu">
+                                    <li class="a_login">
+                                        <a href="http://Kiddytoys/login.html">Đăng Nhập</a>
+                                    </li>
+                                    <li class="a_register">hoặc <a href="http://Kiddytoys/register.html">Tạo tài khoản mới</a></li>
+                                    <li><a href="http://Kiddytoys/user.html">Tài khoản của tôi</a></li>
+                                    <li><a href="http://Kiddytoys/user/order.html">Quản lý đơn hàng</a></li>
+                                    <li><a href="http://Kiddytoys/user/comment.html">Đánh giá của tôi</a></li>
+                                    <li><a href="http://Kiddytoys/kiem-tra-don-hang.html">Kiểm tra đơn hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>                
+                    </li>
+                        <!-- -->
+                     <li> 
+                        <div class="h_usercontrol">
+                            <button type="button">
+                                <i class="fa fa-bell icon"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="h_usercontrol">
+                            <button type="button" onclick="javascript:view_cart()">
+                                <i class="fa fa-shopping-cart icon"></i>
+                                <span class="total-items">0</span>
+                                
+                                <span>
+                                    <b>Giỏ hàng</b> 
+                                </span>
+                                
+                            </button>
+                        </div>
+                    </li>
+                        <!-- -->
+                </ul>                
+            </div>                
+        
+        </div>
+    
     </div>
 </div>
-        <br />
-        
-        <center>© 2016 Chợ Game Touch, All Rights Reserved.</center>
-        <br />
+
+
+    <!-- -->
+
+
+<div class="visible-xs clearfix" id="visiable-xsnav">
+    <div class="col-xs-4">
+        <button type="button" data-toggle="collapse" data-target="#hnav-group-xs" aria-expanded="false" aria-controls="hnav-group-xs" ><i class="glyphicon glyphicon-list"></i></button>
     </div>
     
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    <div class="col-xs-4 text-right">
+        <a onclick="javascript:view_cart()" class="link"> 
+         <span class="so-cart" >
+                 0            </span>
+            <i class="glyphicon glyphicon-shopping-cart pull-left"></i>
+        </a>
+    </div>
+    	<div class="col-xs-4 text-right">
+            <a href="http://Kiddytoys/login.html" class="link">
+                <span class="pull-right hidden-xs hidden-sm">
+                        Đăng Nhập
+                </span>
+                <i class="glyphicon glyphicon-user pull-right"></i>
+            </a>
+        </div>
+<!--   								TẠI SAO LẠI CÓ 2 FORM TÌM KIẾM
+    <form action="http://Kiddytoys/san-pham/search.html" method="get">
+        <div>
+            <input type="text" name="q" value="" placeholder="Bạn đang cần tìmxxxxxxx mày ở đâu..."/>
+            <button type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+        </div>
+    </form>
+-->  
+    
+</div>
+    <!--THANH MENU-->
+<nav class="clearfix hidden-xs" id="hnav-group">
+    <div class="container">
+        <ul class="clearfix">
+                <li  class="">
+                    <a href="http://Kiddytoys.vn/" class="" >TRANG CHỦ </a>
+                </li>
 
-        ga('create', 'UA-57784672-2', 'auto');
-        ga('send', 'pageview');
+                    <!-- BÉ TRAI-->
+                <li  class="">
+                    <a href="betrai.html" class="parent dropdown-toggle disabled" data-toggle="dropdown">ĐỒ CHƠI BÉ TRAI<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu  level-1">
+                    	<li>
+                    		<a href="betrai/robot.html" class="parent dropdown-toggle disabled"data-toggle="dropdown">RoBot<i class="fa fa-caret-right"></i></a>
+                    			<ul class="dropdown-menu sub-menu level-2">
+                    				<li ><a href="betrai/robot/sieuanhhung.html">Siêu Anh Hùng</a></li>
+                    				<li ><a href="betrai/robot/robotbienhinh.html">RoBot Biến Hình</a></li>
+                    			</ul>
+                    	</li>
+                    	<li>
+                    		<a href="betrai/dochoivandong.html" class="parent dropdown-toggle disabled" data-toggle="dropdown">Đồ Chơi Vận Động <i class="fa 		fa-caret-right"></i></a>
+                    			<ul class="dropdown-menu sub-menu level-2">
+                    				<li ><a href="betrai/dochoivandong/xedap.html">Xe Đạp</a></li>
+                    				<li ><a href="betrai/dochoivandong/xetruot.html">Xe Trượt</a></li>
+                    				<li ><a href="betrai/dochoivandong/xedapbabanh.html">Xe Đạp 3 Bánh</a></li>
+                    			</ul>
+                    	</li>
+                    	<li ><a href="betrai/game.html">Game</a></li>
+                    	<li ><a href="betrai/dochoitritue.html">Đồ Chơi Trí Tuệ</a></li>
+                    	<li ><a href="betrai/dochoitheophim.html">Đồ Chơi Theo Phim</a></li>
+                    </ul> 
+                </li>
+					<!--END BÉ TRAI-->
+    	                        
+    	            <!-- BÉ GÁI-->
+                <li  class="active">
+                    <a href="begai.html" class="parent dropdown-toggle disabled" data-toggle="dropdown">ĐỒ CHƠI BÉ GÁI<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu  level-1">
+                    	<li>
+                    		<a href="begai/bupbe.html" class="parent dropdown-toggle disabled"data-toggle="dropdown">Búp Bê<i class="fa fa-caret-right"></i></a>
+                    			<ul class="dropdown-menu sub-menu level-2">
+                    				<li ><a href="begai/bupbe/bupbedisney.html">Búp Bê Disney</a></li>
+                    				<li ><a href="begai/bupbe/bupbegiayhanquoc.html">Búp Bê Giấy Hàn Quốc</a></li>
+                    			</ul>
+                    	</li>
+                    	<li>
+                    		<a href="begai/lamdieuchobe.html" class="parent dropdown-toggle disabled" data-toggle="dropdown">Làm Điệu Cho Bé<i class="fa 		fa-caret-right"></i></a>
+                    			<ul class="dropdown-menu sub-menu level-2">
+                    				<li ><a href="begai/lamdieuchobe/vivatuixach.html">Ví và Túi Xách</a></li>
+                    				<li ><a href="begai/lamdieuchobe/phukientoc.html">Phụ Kiện Tóc</a></li>
+                    				<li ><a href="begai/lamdieuchobe/trangsuc.html">Trang Sức</a></li>
+                    			</ul>
+                    	</li>
+                    	<li ><a href="begai/dodungnhabep.html">Đồ Dùng Nhà Bếp</a></li>
+                    	<li ><a href="begai/kheotayhaylam.html">Khéo Tay Hay Làm</a></li>
+                    	<li ><a href="begai/dochoitheophim.html">Đồ Chơi Theo Phim</a></li>
+                    </ul>         
+                </li>
+					<!-- END BÉ GÁI-->
+
+                    <!-- KHUYẾN MÃI-->
+                <li  class="">
+                    <a href="khuyenmai.html" class="" >GIÁ TỐT<span>-30%</span></a>
+                </li>
+        </ul>
+    </div>
+</nav>
+ 	<!-- END THANH MENU-->
+
+ 	               <!-- TẠI SAO LẠI 2 THANH MENU có phải trên giao diện dt nó nhóm lại
+<nav class="clearfix collapse" id="hnav-group-xs">
+    <div class="container">
+        <ul class="clearfix">
+            <li>
+            		<a href="http://Kiddytoys.vn/"><i class="glyphicon glyphicon-home"></i></a>
+            </li>
+            <li>
+                    <a href="http://Kiddytoys.vn/"> TRANG CHỦ </a>
+            </li>
+            
+            <li  >
+                    <a href="betrai.html"> ĐỒ CHƠI BÉ TRAI </a>
+            </li>
+            
+            <li  class="active">
+                    <a href="begai.html"> ĐỒ CHƠI BÉ GÁI </a>
+            </li>
+            
+            <li>
+                    <a href="khuyenmai/.html"> GIÁ TỐT <span>-30%</span></a>
+            </li>
+           
+            
+        </ul>
+    
+    </div>
+
+</nav>
+
+                     -->
+    </header>
+    
+    <div class="clearfix">
+    	
+			    <div class="col-right visible-xs">
+	<!-- #region Jssor Slider Begin --><!-- Generated by Jssor Slider Maker. --><!-- This is deep minimized demo, it works alone, it doesn't depend on any javascript library. -->
+<script>(function(h,f,c,j,d,l,k){/*! Jssor */ 
+new(function(){});var e={zd:function(a){return-c.cos(a*c.PI)/2+.5},Vd:function(a){return a},Wd:function(a){return-a*(a-2)}};var b=new function(){var g=this,Ab=/\S+/g,F=1,yb=2,fb=3,eb=4,jb=5,G,r=0,i=0,s=0,X=0,z=0,I=navigator,ob=I.appName,o=I.userAgent,p=parseFloat;function Ib(){if(!G){G={Ue:"ontouchstart"in h||"createTouch"in f};var a;if(I.pointerEnabled||(a=I.msPointerEnabled))G.md=a?"msTouchAction":"touchAction"}return G}function v(j){if(!r){r=-1;if(ob=="Microsoft Internet Explorer"&&!!h.attachEvent&&!!h.ActiveXObject){var e=o.indexOf("MSIE");r=F;s=p(o.substring(e+5,o.indexOf(";",e)));/*@cc_on X=@_jscript_version@*/;i=f.documentMode||s}else if(ob=="Netscape"&&!!h.addEventListener){var d=o.indexOf("Firefox"),b=o.indexOf("Safari"),g=o.indexOf("Chrome"),c=o.indexOf("AppleWebKit");if(d>=0){r=yb;i=p(o.substring(d+8))}else if(b>=0){var k=o.substring(0,b).lastIndexOf("/");r=g>=0?eb:fb;i=p(o.substring(k+1,b))}else{var a=/Trident\/.*rv:([0-9]{1,}[\.0-9]{0,})/i.exec(o);if(a){r=F;i=s=p(a[1])}}if(c>=0)z=p(o.substring(c+12))}else{var a=/(opera)(?:.*version|)[ \/]([\w.]+)/i.exec(o);if(a){r=jb;i=p(a[2])}}}return j==r}function q(){return v(F)}function Q(){return q()&&(i<6||f.compatMode=="BackCompat")}function db(){return v(fb)}function ib(){return v(jb)}function vb(){return db()&&z>534&&z<535}function J(){v();return z>537||i>42||r==F&&i>=11}function O(){return q()&&i<9}function wb(a){var b,c;return function(f){if(!b){b=d;var e=a.substr(0,1).toUpperCase()+a.substr(1);n([a].concat(["WebKit","ms","Moz","O","webkit"]),function(g,d){var b=a;if(d)b=g+e;if(f.style[b]!=k)return c=b})}return c}}function ub(b){var a;return function(c){a=a||wb(b)(c)||b;return a}}var K=ub("transform");function nb(a){return{}.toString.call(a)}var kb={};n(["Boolean","Number","String","Function","Array","Date","RegExp","Object"],function(a){kb["[object "+a+"]"]=a.toLowerCase()});function n(b,d){var a,c;if(nb(b)=="[object Array]"){for(a=0;a<b.length;a++)if(c=d(b[a],a,b))return c}else for(a in b)if(c=d(b[a],a,b))return c}function C(a){return a==j?String(a):kb[nb(a)]||"object"}function lb(a){for(var b in a)return d}function A(a){try{return C(a)=="object"&&!a.nodeType&&a!=a.window&&(!a.constructor||{}.hasOwnProperty.call(a.constructor.prototype,"isPrototypeOf"))}catch(b){}}function u(a,b){return{x:a,y:b}}function rb(b,a){setTimeout(b,a||0)}function H(b,d,c){var a=!b||b=="inherit"?"":b;n(d,function(c){var b=c.exec(a);if(b){var d=a.substr(0,b.index),e=a.substr(b.index+b[0].length+1,a.length-1);a=d+e}});a=c+(!a.indexOf(" ")?"":" ")+a;return a}function tb(b,a){if(i<9)b.style.filter=a}g.Me=Ib;g.od=q;g.Oe=db;g.yd=ib;g.Pe=J;g.lb=O;wb("transform");g.ud=function(){return i};g.Re=function(){v();return z};g.Db=rb;function Y(a){a.constructor===Y.caller&&a.sd&&a.sd.apply(a,Y.caller.arguments)}g.sd=Y;g.rb=function(a){if(g.Te(a))a=f.getElementById(a);return a};function t(a){return a||h.event}g.pd=t;g.oc=function(b){b=t(b);var a=b.target||b.srcElement||f;if(a.nodeType==3)a=g.dd(a);return a};g.Ec=function(a){a=t(a);return{x:a.pageX||a.clientX||0,y:a.pageY||a.clientY||0}};function D(c,d,a){if(a!==k)c.style[d]=a==k?"":a;else{var b=c.currentStyle||c.style;a=b[d];if(a==""&&h.getComputedStyle){b=c.ownerDocument.defaultView.getComputedStyle(c,j);b&&(a=b.getPropertyValue(d)||b[d])}return a}}function ab(b,c,a,d){if(a!==k){if(a==j)a="";else d&&(a+="px");D(b,c,a)}else return p(D(b,c))}function m(c,a){var d=a?ab:D,b;if(a&4)b=ub(c);return function(e,f){return d(e,b?b(e):c,f,a&2)}}function Db(b){if(q()&&s<9){var a=/opacity=([^)]*)/.exec(b.style.filter||"");return a?p(a[1])/100:1}else return p(b.style.opacity||"1")}function Fb(b,a,f){if(q()&&s<9){var h=b.style.filter||"",i=new RegExp(/[\s]*alpha\([^\)]*\)/g),e=c.round(100*a),d="";if(e<100||f)d="alpha(opacity="+e+") ";var g=H(h,[i],d);tb(b,g)}else b.style.opacity=a==1?"":c.round(a*100)/100}var L={M:["rotate"],Q:["rotateX"],U:["rotateY"],Eb:["skewX"],Fb:["skewY"]};if(!J())L=B(L,{o:["scaleX",2],p:["scaleY",2],S:["translateZ",1]});function M(d,a){var c="";if(a){if(q()&&i&&i<10){delete a.Q;delete a.U;delete a.S}b.e(a,function(d,b){var a=L[b];if(a){var e=a[1]||0;if(N[b]!=d)c+=" "+a[0]+"("+d+(["deg","px",""])[e]+")"}});if(J()){if(a.ib||a.cb||a.S)c+=" translate3d("+(a.ib||0)+"px,"+(a.cb||0)+"px,"+(a.S||0)+"px)";if(a.o==k)a.o=1;if(a.p==k)a.p=1;if(a.o!=1||a.p!=1)c+=" scale3d("+a.o+", "+a.p+", 1)"}}d.style[K(d)]=c}g.Lc=m("transformOrigin",4);g.Le=m("backfaceVisibility",4);g.We=m("transformStyle",4);g.Ke=m("perspective",6);g.Je=m("perspectiveOrigin",4);g.Ie=function(a,b){if(q()&&s<9||s<10&&Q())a.style.zoom=b==1?"":b;else{var c=K(a),f="scale("+b+")",e=a.style[c],g=new RegExp(/[\s]*scale\(.*?\)/g),d=H(e,[g],f);a.style[c]=d}};g.Rb=function(b,a){return function(c){c=t(c);var e=c.type,d=c.relatedTarget||(e=="mouseout"?c.toElement:c.fromElement);(!d||d!==a&&!g.Ge(a,d))&&b(c)}};g.a=function(a,d,b,c){a=g.rb(a);if(a.addEventListener){d=="mousewheel"&&a.addEventListener("DOMMouseScroll",b,c);a.addEventListener(d,b,c)}else if(a.attachEvent){a.attachEvent("on"+d,b);c&&a.setCapture&&a.setCapture()}};g.K=function(a,c,d,b){a=g.rb(a);if(a.removeEventListener){c=="mousewheel"&&a.removeEventListener("DOMMouseScroll",d,b);a.removeEventListener(c,d,b)}else if(a.detachEvent){a.detachEvent("on"+c,d);b&&a.releaseCapture&&a.releaseCapture()}};g.Nb=function(a){a=t(a);a.preventDefault&&a.preventDefault();a.cancel=d;a.returnValue=l};g.Be=function(a){a=t(a);a.stopPropagation&&a.stopPropagation();a.cancelBubble=d};g.I=function(d,c){var a=[].slice.call(arguments,2),b=function(){var b=a.concat([].slice.call(arguments,0));return c.apply(d,b)};return b};g.ze=function(a,b){if(b==k)return a.textContent||a.innerText;var c=f.createTextNode(b);g.Vb(a);a.appendChild(c)};g.Bb=function(d,c){for(var b=[],a=d.firstChild;a;a=a.nextSibling)(c||a.nodeType==1)&&b.push(a);return b};function mb(a,c,e,b){b=b||"u";for(a=a?a.firstChild:j;a;a=a.nextSibling)if(a.nodeType==1){if(U(a,b)==c)return a;if(!e){var d=mb(a,c,e,b);if(d)return d}}}g.E=mb;function S(a,d,f,b){b=b||"u";var c=[];for(a=a?a.firstChild:j;a;a=a.nextSibling)if(a.nodeType==1){U(a,b)==d&&c.push(a);if(!f){var e=S(a,d,f,b);if(e.length)c=c.concat(e)}}return c}function gb(a,c,d){for(a=a?a.firstChild:j;a;a=a.nextSibling)if(a.nodeType==1){if(a.tagName==c)return a;if(!d){var b=gb(a,c,d);if(b)return b}}}g.bf=gb;function xb(a,c,e){var b=[];for(a=a?a.firstChild:j;a;a=a.nextSibling)if(a.nodeType==1){(!c||a.tagName==c)&&b.push(a);if(!e){var d=xb(a,c,e);if(d.length)b=b.concat(d)}}return b}g.Xe=xb;g.nf=function(b,a){return b.getElementsByTagName(a)};function B(){var e=arguments,d,c,b,a,g=1&e[0],f=1+g;d=e[f-1]||{};for(;f<e.length;f++)if(c=e[f])for(b in c){a=c[b];if(a!==k){a=c[b];var h=d[b];d[b]=g&&(A(h)||A(a))?B(g,{},h,a):a}}return d}g.B=B;function Z(f,g){var d={},c,a,b;for(c in f){a=f[c];b=g[c];if(a!==b){var e;if(A(a)&&A(b)){a=Z(a,b);e=!lb(a)}!e&&(d[c]=a)}}return d}g.Hc=function(a){return C(a)=="function"};g.Te=function(a){return C(a)=="string"};g.vc=function(a){return!isNaN(p(a))&&isFinite(a)};g.e=n;g.ef=A;function R(a){return f.createElement(a)}g.Cb=function(){return R("DIV")};g.af=function(){return R("SPAN")};g.Vc=function(){};function V(b,c,a){if(a==k)return b.getAttribute(c);b.setAttribute(c,a)}function U(a,b){return V(a,b)||V(a,"data-"+b)}g.r=V;g.j=U;function x(b,a){if(a==k)return b.className;b.className=a}g.Oc=x;function qb(b){var a={};n(b,function(b){a[b]=b});return a}function sb(b,a){return b.match(a||Ab)}function P(b,a){return qb(sb(b||"",a))}g.jf=sb;function bb(b,c){var a="";n(c,function(c){a&&(a+=b);a+=c});return a}function E(a,c,b){x(a,bb(" ",B(Z(P(x(a)),P(c)),P(b))))}g.dd=function(a){return a.parentNode};g.H=function(a){g.V(a,"none")};g.v=function(a,b){g.V(a,b?"none":"")};g.ue=function(b,a){b.removeAttribute(a)};g.Od=function(){return q()&&i<10};g.Nd=function(d,a){if(a)d.style.clip="rect("+c.round(a.g||a.A||0)+"px "+c.round(a.m)+"px "+c.round(a.n)+"px "+c.round(a.f||a.z||0)+"px)";else if(a!==k){var g=d.style.cssText,f=[new RegExp(/[\s]*clip: rect\(.*?\)[;]?/i),new RegExp(/[\s]*cliptop: .*?[;]?/i),new RegExp(/[\s]*clipright: .*?[;]?/i),new RegExp(/[\s]*clipbottom: .*?[;]?/i),new RegExp(/[\s]*clipleft: .*?[;]?/i)],e=H(g,f,"");b.Hb(d,e)}};g.X=function(){return+new Date};g.N=function(b,a){b.appendChild(a)};g.Qb=function(b,a,c){(c||a.parentNode).insertBefore(b,a)};g.Lb=function(b,a){a=a||b.parentNode;a&&a.removeChild(b)};g.qe=function(a,b){n(a,function(a){g.Lb(a,b)})};g.Vb=function(a){g.qe(g.Bb(a,d),a)};g.Id=function(a,b){var c=g.dd(a);b&1&&g.O(a,(g.k(c)-g.k(a))/2);b&2&&g.J(a,(g.l(c)-g.l(a))/2)};g.Dd=function(b,a){return parseInt(b,a||10)};g.Bd=p;g.Ge=function(b,a){var c=f.body;while(a&&b!==a&&c!==a)try{a=a.parentNode}catch(d){return l}return b===a};function W(d,c,b){var a=d.cloneNode(!c);!b&&g.ue(a,"id");return a}g.ab=W;g.nb=function(e,f){var a=new Image;function b(e,d){g.K(a,"load",b);g.K(a,"abort",c);g.K(a,"error",c);f&&f(a,d)}function c(a){b(a,d)}if(ib()&&i<11.6||!e)b(!e);else{g.a(a,"load",b);g.a(a,"abort",c);g.a(a,"error",c);a.src=e}};g.Qd=function(d,a,e){var c=d.length+1;function b(b){c--;if(a&&b&&b.src==a.src)a=b;!c&&e&&e(a)}n(d,function(a){g.nb(a.src,b)});b()};g.oe=function(a,g,i,h){if(h)a=W(a);var c=S(a,g);if(!c.length)c=b.nf(a,g);for(var f=c.length-1;f>-1;f--){var d=c[f],e=W(i);x(e,x(d));b.Hb(e,d.style.cssText);b.Qb(e,d);b.Lb(d)}return a};function Gb(a){var l=this,p="",r=["av","pv","ds","dn"],e=[],q,j=0,h=0,d=0;function i(){E(a,q,e[d||j||h&2||h]);b.Z(a,"pointer-events",d?"none":"")}function c(){j=0;i();g.K(f,"mouseup",c);g.K(f,"touchend",c);g.K(f,"touchcancel",c)}function o(a){if(d)g.Nb(a);else{j=4;i();g.a(f,"mouseup",c);g.a(f,"touchend",c);g.a(f,"touchcancel",c)}}l.Sd=function(a){if(a===k)return h;h=a&2||a&1;i()};l.Nc=function(a){if(a===k)return!d;d=a?0:3;i()};l.hb=a=g.rb(a);var m=b.jf(x(a));if(m)p=m.shift();n(r,function(a){e.push(p+a)});q=bb(" ",e);e.unshift("");g.a(a,"mousedown",o);g.a(a,"touchstart",o)}g.tc=function(a){return new Gb(a)};g.Z=D;g.pb=m("overflow");g.J=m("top",2);g.O=m("left",2);g.k=m("width",2);g.l=m("height",2);g.ne=m("marginLeft",2);g.me=m("marginTop",2);g.s=m("position");g.V=m("display");g.C=m("zIndex",1);g.wb=function(b,a,c){if(a!=k)Fb(b,a,c);else return Db(b)};g.Hb=function(a,b){if(b!=k)a.style.cssText=b;else return a.style.cssText};var T={L:g.wb,g:g.J,f:g.O,W:g.k,P:g.l,qb:g.s,zf:g.V,F:g.C};function w(f,l){var e=O(),b=J(),d=vb(),h=K(f);function i(b,d,a){var e=b.eb(u(-d/2,-a/2)),f=b.eb(u(d/2,-a/2)),g=b.eb(u(d/2,a/2)),h=b.eb(u(-d/2,a/2));b.eb(u(414,414));return u(c.min(e.x,f.x,g.x,h.x)+d/2,c.min(e.y,f.y,g.y,h.y)+a/2)}function a(d,a){a=a||{};var f=a.S||0,l=(a.Q||0)%360,m=(a.U||0)%360,o=(a.M||0)%360,p=a.yf;if(e){f=0;l=0;m=0;p=0}var c=new Cb(a.ib,a.cb,f);c.Q(l);c.U(m);c.ke(o);c.je(a.Eb,a.Fb);c.rc(a.o,a.p,p);if(b){c.fb(a.z,a.A);d.style[h]=c.Rd()}else if(!X||X<9){var j="";if(o||a.o!=k&&a.o!=1||a.p!=k&&a.p!=1){var n=i(c,a.mb,a.gb);g.me(d,n.y);g.ne(d,n.x);j=c.ie()}var r=d.style.filter,s=new RegExp(/[\s]*progid:DXImageTransform\.Microsoft\.Matrix\([^\)]*\)/g),q=H(r,[s],j);tb(d,q)}}w=function(e,c){c=c||{};var h=c.z,i=c.A,f;n(T,function(a,b){f=c[b];f!==k&&a(e,f)});g.Nd(e,c.c);if(!b){h!=k&&g.O(e,(c.Sc||0)+h);i!=k&&g.J(e,(c.Tc||0)+i)}if(c.he)if(d)rb(g.I(j,M,e,c));else a(e,c)};g.zb=M;if(d)g.zb=w;if(e)g.zb=a;else if(!b)a=M;g.D=w;w(f,l)}g.zb=w;g.D=w;function Cb(i,l,p){var d=this,b=[1,0,0,0,0,1,0,0,0,0,1,0,i||0,l||0,p||0,1],h=c.sin,g=c.cos,m=c.tan;function f(a){return a*c.PI/180}function o(a,b){return{x:a,y:b}}function n(c,e,l,m,o,r,t,u,w,z,A,C,E,b,f,k,a,g,i,n,p,q,s,v,x,y,B,D,F,d,h,j){return[c*a+e*p+l*x+m*F,c*g+e*q+l*y+m*d,c*i+e*s+l*B+m*h,c*n+e*v+l*D+m*j,o*a+r*p+t*x+u*F,o*g+r*q+t*y+u*d,o*i+r*s+t*B+u*h,o*n+r*v+t*D+u*j,w*a+z*p+A*x+C*F,w*g+z*q+A*y+C*d,w*i+z*s+A*B+C*h,w*n+z*v+A*D+C*j,E*a+b*p+f*x+k*F,E*g+b*q+f*y+k*d,E*i+b*s+f*B+k*h,E*n+b*v+f*D+k*j]}function e(c,a){return n.apply(j,(a||b).concat(c))}d.rc=function(a,c,d){if(a==k)a=1;if(c==k)c=1;if(d==k)d=1;if(a!=1||c!=1||d!=1)b=e([a,0,0,0,0,c,0,0,0,0,d,0,0,0,0,1])};d.fb=function(a,c,d){b[12]+=a||0;b[13]+=c||0;b[14]+=d||0};d.Q=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([1,0,0,0,0,d,i,0,0,-i,d,0,0,0,0,1])}};d.U=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([d,0,-i,0,0,1,0,0,i,0,d,0,0,0,0,1])}};d.ke=function(c){if(c){a=f(c);var d=g(a),i=h(a);b=e([d,i,0,0,-i,d,0,0,0,0,1,0,0,0,0,1])}};d.je=function(a,c){if(a||c){i=f(a);l=f(c);b=e([1,m(l),0,0,m(i),1,0,0,0,0,1,0,0,0,0,1])}};d.eb=function(c){var a=e(b,[1,0,0,0,0,1,0,0,0,0,1,0,c.x,c.y,0,1]);return o(a[12],a[13])};d.Rd=function(){return"matrix3d("+b.join(",")+")"};d.ie=function(){return"progid:DXImageTransform.Microsoft.Matrix(M11="+b[0]+", M12="+b[4]+", M21="+b[1]+", M22="+b[5]+", SizingMethod='auto expand')"}}new function(){var a=this;function b(d,g){for(var j=d[0].length,i=d.length,h=g[0].length,f=[],c=0;c<i;c++)for(var k=f[c]=[],b=0;b<h;b++){for(var e=0,a=0;a<j;a++)e+=d[c][a]*g[a][b];k[b]=e}return f}a.o=function(b,c){return a.Uc(b,c,0)};a.p=function(b,c){return a.Uc(b,0,c)};a.Uc=function(a,c,d){return b(a,[[c,0],[0,d]])};a.eb=function(d,c){var a=b(d,[[c.x],[c.y]]);return u(a[0][0],a[1][0])}};var N={Sc:0,Tc:0,z:0,A:0,u:1,o:1,p:1,M:0,Q:0,U:0,ib:0,cb:0,S:0,Eb:0,Fb:0};g.Rc=function(a){var c=a||{};if(a)if(b.Hc(a))c={kc:c};else if(b.Hc(a.c))c.c={kc:a.c};return c};g.Qc=function(l,m,x,q,z,A,n){var a=m;if(l){a={};for(var g in m){var B=A[g]||1,w=z[g]||[0,1],f=(x-w[0])/w[1];f=c.min(c.max(f,0),1);f=f*B;var u=c.floor(f);if(f!=u)f-=u;var h=q.kc||e.zd,i,C=l[g],o=m[g];if(b.vc(o)){h=q[g]||h;var y=h(f);i=C+o*y}else{i=b.B({Ob:{}},l[g]);var v=q[g]||{};b.e(o.Ob||o,function(d,a){h=v[a]||v.kc||h;var c=h(f),b=d*c;i.Ob[a]=b;i[a]+=b})}a[g]=i}var t=b.e(m,function(b,a){return N[a]!=k});t&&b.e(N,function(c,b){if(a[b]==k&&l[b]!==k)a[b]=l[b]});if(t){if(a.u)a.o=a.p=a.u;a.mb=n.mb;a.gb=n.gb;a.he=d}}if(m.c&&n.fb){var p=a.c.Ob,s=(p.g||0)+(p.n||0),r=(p.f||0)+(p.m||0);a.f=(a.f||0)+r;a.g=(a.g||0)+s;a.c.f-=r;a.c.m-=r;a.c.g-=s;a.c.n-=s}if(a.c&&b.Od()&&!a.c.g&&!a.c.f&&!a.c.A&&!a.c.z&&a.c.m==n.mb&&a.c.n==n.gb)a.c=j;return a}};function n(){var a=this,d=[];function i(a,b){d.push({ac:a,ic:b})}function g(a,c){b.e(d,function(b,e){b.ac==a&&b.ic===c&&d.splice(e,1)})}a.yb=a.addEventListener=i;a.removeEventListener=g;a.i=function(a){var c=[].slice.call(arguments,1);b.e(d,function(b){b.ac==a&&b.ic.apply(h,c)})}}var m=function(z,C,i,J,M,L){z=z||0;var a=this,q,n,o,u,A=0,G,H,F,B,y=0,g=0,m=0,D,k,f,e,p,w=[],x;function O(a){f+=a;e+=a;k+=a;g+=a;m+=a;y+=a}function t(o){var h=o;if(p&&(h>=e||h<=f))h=((h-f)%p+p)%p+f;if(!D||u||g!=h){var j=c.min(h,e);j=c.max(j,f);if(!D||u||j!=m){if(L){var l=(j-k)/(C||1);if(i.Ic)l=1-l;var n=b.Qc(M,L,l,G,F,H,i);if(x)b.e(n,function(b,a){x[a]&&x[a](J,b)});else b.D(J,n)}a.gc(m-k,j-k);m=j;b.e(w,function(b,c){var a=o<g?w[w.length-c-1]:b;a.R(m-y)});var r=g,q=m;g=h;D=d;a.Ab(r,q)}}}function E(a,b,d){b&&a.Gb(e);if(!d){f=c.min(f,a.uc()+y);e=c.max(e,a.dc()+y)}w.push(a)}var r=h.requestAnimationFrame||h.webkitRequestAnimationFrame||h.mozRequestAnimationFrame||h.msRequestAnimationFrame;if(b.Oe()&&b.ud()<7)r=j;r=r||function(a){b.Db(a,i.T)};function I(){if(q){var d=b.X(),e=c.min(d-A,i.wc),a=g+e*o;A=d;if(a*o>=n*o)a=n;t(a);if(!u&&a*o>=n*o)K(B);else r(I)}}function s(h,i,j){if(!q){q=d;u=j;B=i;h=c.max(h,f);h=c.min(h,e);n=h;o=n<g?-1:1;a.xc();A=b.X();r(I)}}function K(b){if(q){u=q=B=l;a.yc();b&&b()}}a.Fc=function(a,b,c){s(a?g+a:e,b,c)};a.Bc=s;a.db=K;a.Ud=function(a){s(a)};a.Y=function(){return g};a.Cc=function(){return n};a.sb=function(){return m};a.R=t;a.fb=function(a){t(g+a)};a.Wc=function(){return q};a.Td=function(a){p=a};a.Gb=O;a.Dc=function(a,b){E(a,0,b)};a.bc=function(a){E(a,1)};a.uc=function(){return f};a.dc=function(){return e};a.Ab=a.xc=a.yc=a.gc=b.Vc;a.hc=b.X();i=b.B({T:16,wc:50},i);p=i.Jc;x=i.be;f=k=z;e=z+C;H=i.Kc||{};F=i.Mc||{};G=b.Rc(i.bb)};var p=new function(){var h=this;function g(b,a,c){c.push(a);b[a]=b[a]||[];b[a].push(c)}h.mf=function(d){for(var e=[],a,b=0;b<d.kb;b++)for(a=0;a<d.q;a++)g(e,c.ceil(1e5*c.random())%13,[b,a]);return e}},s=function(k,s,q,u,z){var f=this,v,g,a,y=0,x=u.cf,r,h=8;function t(a){if(a.g)a.A=a.g;if(a.f)a.z=a.f;b.e(a,function(a){b.ef(a)&&t(a)})}function i(g,f){var a={T:f,Wb:1,Db:0,q:1,kb:1,L:0,u:0,c:0,fb:l,Xb:l,Ic:l,gf:p.mf,Ac:{of:0,Ve:0},bb:e.zd,Kc:{},Kb:[],Mc:{}};b.B(a,g);t(a);a.bb=b.Rc(a.bb);a.se=c.ceil(a.Wb/a.T);a.te=function(c,b){c/=a.q;b/=a.kb;var f=c+"x"+b;if(!a.Kb[f]){a.Kb[f]={W:c,P:b};for(var d=0;d<a.q;d++)for(var e=0;e<a.kb;e++)a.Kb[f][e+","+d]={g:e*b,m:d*c+c,n:e*b+b,f:d*c}}return a.Kb[f]};if(a.Ub){a.Ub=i(a.Ub,f);a.Xb=d}return a}function o(B,h,a,w,o,m){var z=this,u,v={},i={},n=[],f,e,s,q=a.Ac.of||0,r=a.Ac.Ve||0,g=a.te(o,m),p=C(a),D=p.length-1,t=a.Wb+a.Db*D,x=w+t,k=a.Xb,y;x+=50;function C(a){var b=a.gf(a);return a.Ic?b.reverse():b}z.Gc=x;z.Mb=function(d){d-=w;var e=d<t;if(e||y){y=e;if(!k)d=t-d;var f=c.ceil(d/a.T);b.e(i,function(a,e){var d=c.max(f,a.xe);d=c.min(d,a.length-1);if(a.Pc!=d){if(!a.Pc&&!k)b.v(n[e]);else d==a.He&&k&&b.H(n[e]);a.Pc=d;b.D(n[e],a[d])}})}};h=b.ab(h);b.zb(h,j);if(b.lb()){var E=!h["no-image"],A=b.Xe(h);b.e(A,function(a){(E||a["jssor-slider"])&&b.wb(a,b.wb(a),d)})}b.e(p,function(h,j){b.e(h,function(G){var K=G[0],J=G[1],t=K+","+J,n=l,p=l,x=l;if(q&&J%2){if(q&3)n=!n;if(q&12)p=!p;if(q&16)x=!x}if(r&&K%2){if(r&3)n=!n;if(r&12)p=!p;if(r&16)x=!x}a.g=a.g||a.c&4;a.n=a.n||a.c&8;a.f=a.f||a.c&1;a.m=a.m||a.c&2;var E=p?a.n:a.g,B=p?a.g:a.n,D=n?a.m:a.f,C=n?a.f:a.m;a.c=E||B||D||C;s={};e={A:0,z:0,L:1,W:o,P:m};f=b.B({},e);u=b.B({},g[t]);if(a.L)e.L=2-a.L;if(a.F){e.F=a.F;f.F=0}var I=a.q*a.kb>1||a.c;if(a.u||a.M){var H=d;if(b.lb())if(a.q*a.kb>1)H=l;else I=l;if(H){e.u=a.u?a.u-1:1;f.u=1;if(b.lb()||b.yd())e.u=c.min(e.u,2);var N=a.M||0;e.M=N*360*(x?-1:1);f.M=0}}if(I){var h=u.Ob={};if(a.c){var w=a.sf||1;if(E&&B){h.g=g.P/2*w;h.n=-h.g}else if(E)h.n=-g.P*w;else if(B)h.g=g.P*w;if(D&&C){h.f=g.W/2*w;h.m=-h.f}else if(D)h.m=-g.W*w;else if(C)h.f=g.W*w}s.c=u;f.c=g[t]}var L=n?1:-1,M=p?1:-1;if(a.x)e.z+=o*a.x*L;if(a.y)e.A+=m*a.y*M;b.e(e,function(a,c){if(b.vc(a))if(a!=f[c])s[c]=a-f[c]});v[t]=k?f:e;var F=a.se,A=c.round(j*a.Db/a.T);i[t]=new Array(A);i[t].xe=A;i[t].He=A+F-1;for(var z=0;z<=F;z++){var y=b.Qc(f,s,z/F,a.bb,a.Mc,a.Kc,{fb:a.fb,mb:o,gb:m});y.F=y.F||1;i[t].push(y)}})});p.reverse();b.e(p,function(a){b.e(a,function(c){var f=c[0],e=c[1],d=f+","+e,a=h;if(e||f)a=b.ab(h);b.D(a,v[d]);b.pb(a,"hidden");b.s(a,"absolute");B.Se(a);n[d]=a;b.v(a,!k)})})}function w(){var b=this,c=0;m.call(b,0,v);b.Ab=function(d,b){if(b-c>h){c=b;a&&a.Mb(b);g&&g.Mb(b)}};b.zc=r}f.pe=function(){var a=0,b=u.ub,d=b.length;if(x)a=y++%d;else a=c.floor(c.random()*d);b[a]&&(b[a].jb=a);return b[a]};f.Qe=function(w,x,l,m,b){r=b;b=i(b,h);var j=m.xd,e=l.xd;j["no-image"]=!m.Sb;e["no-image"]=!l.Sb;var n=j,p=e,u=b,d=b.Ub||i({},h);if(!b.Xb){n=e;p=j}var t=d.Gb||0;g=new o(k,p,d,c.max(t-d.T,0),s,q);a=new o(k,n,u,c.max(d.T-t,0),s,q);g.Mb(0);a.Mb(0);v=c.max(g.Gc,a.Gc);f.jb=w};f.vb=function(){k.vb();g=j;a=j};f.Ne=function(){var b=j;if(a)b=new w;return b};if(b.lb()||b.yd()||z&&b.Re()<537)h=16;n.call(f);m.call(f,-1e7,1e7)},i=function(p,fc){var g=this;function Bc(){var a=this;m.call(a,-1e8,2e8);a.Ee=function(){var b=a.sb(),d=c.floor(b),f=t(d),e=b-c.floor(b);return{jb:f,De:d,qb:e}};a.Ab=function(b,a){var e=c.floor(a);if(e!=a&&a>b)e++;Tb(e,d);g.i(i.Ce,t(a),t(b),a,b)}}function Ac(){var a=this;m.call(a,0,0,{Jc:r});b.e(C,function(b){D&1&&b.Td(r);a.bc(b);b.Gb(kb/bc)})}function zc(){var a=this,b=Ub.hb;m.call(a,-1,2,{bb:e.Vd,be:{qb:Zb},Jc:r},b,{qb:1},{qb:-2});a.Tb=b}function mc(o,n){var b=this,e,f,h,k,c;m.call(b,-1e8,2e8,{wc:100});b.xc=function(){M=d;R=j;g.i(i.Ae,t(w.Y()),w.Y())};b.yc=function(){M=l;k=l;var a=w.Ee();g.i(i.ye,t(w.Y()),w.Y());!a.qb&&Dc(a.De,s)};b.Ab=function(i,g){var b;if(k)b=c;else{b=f;if(h){var d=g/h;b=a.we(d)*(f-e)+e}}w.R(b)};b.Jb=function(a,d,c,g){e=a;f=d;h=c;w.R(a);b.R(0);b.Bc(c,g)};b.ve=function(a){k=d;c=a;b.Fc(a,j,d)};b.re=function(a){c=a};w=new Bc;w.Dc(o);w.Dc(n)}function oc(){var c=this,a=Xb();b.C(a,0);b.Z(a,"pointerEvents","none");c.hb=a;c.Se=function(c){b.N(a,c);b.v(a)};c.vb=function(){b.H(a);b.Vb(a)}}function xc(o,f){var e=this,q,L,v,k,y=[],x,B,W,G,Q,F,h,w,p;m.call(e,-u,u+1,{});function E(a){q&&q.td();T(o,a,0);F=d;q=new I.G(o,I,b.Bd(b.j(o,"idle"))||lc);q.R(0)}function Z(){q.hc<I.hc&&E()}function M(p,r,o){if(!G){G=d;if(k&&o){var h=o.width,c=o.height,n=h,m=c;if(h&&c&&a.ob){if(a.ob&3&&(!(a.ob&4)||h>K||c>J)){var j=l,q=K/J*c/h;if(a.ob&1)j=q>1;else if(a.ob&2)j=q<1;n=j?h*J/c:K;m=j?J:c*K/h}b.k(k,n);b.l(k,m);b.J(k,(J-m)/2);b.O(k,(K-n)/2)}b.s(k,"absolute");g.i(i.Fe,f)}}b.H(r);p&&p(e)}function Y(b,c,d,g){if(g==R&&s==f&&N)if(!Cc){var a=t(b);A.Qe(a,f,c,e,d);c.pf();U.Gb(a-U.uc()-1);U.R(a);z.Jb(b,b,0)}}function bb(b){if(b==R&&s==f){if(!h){var a=j;if(A)if(A.jb==f)a=A.Ne();else A.vb();Z();h=new vc(o,f,a,q);h.jd(p)}!h.Wc()&&h.Yb()}}function S(d,g,l){if(d==f){if(d!=g)C[g]&&C[g].kf();else!l&&h&&h.hf();p&&p.Nc();var m=R=b.X();e.nb(b.I(j,bb,m))}else{var k=c.min(f,d),i=c.max(f,d),o=c.min(i-k,k+r-i),n=u+a.ff-1;(!Q||o<=n)&&e.nb()}}function db(){if(s==f&&h){h.db();p&&p.df();p&&p.Ze();h.fd()}}function eb(){s==f&&h&&h.db()}function ab(a){!P&&g.i(i.Ye,f,a)}function O(){p=w.pInstance;h&&h.jd(p)}e.nb=function(c,a){a=a||v;if(y.length&&!G){b.v(a);if(!W){W=d;g.i(i.lf,f);b.e(y,function(a){if(!b.r(a,"src")){a.src=b.j(a,"src2");b.V(a,a["display-origin"])}})}b.Qd(y,k,b.I(j,M,c,a))}else M(c,a)};e.qf=function(){var h=f;if(a.nd<0)h-=r;var d=h+a.nd*tc;if(D&2)d=t(d);if(!(D&1)&&!ib)d=c.max(0,c.min(d,r-u));if(d!=f){if(A){var e=A.pe(r);if(e){var i=R=b.X(),g=C[t(d)];return g.nb(b.I(j,Y,d,g,e,i),v)}}cb(d)}};e.sc=function(){S(f,f,d)};e.kf=function(){p&&p.df();p&&p.Ze();e.Xc();h&&h.Md();h=j;E()};e.pf=function(){b.H(o)};e.Xc=function(){b.v(o)};e.Ld=function(){p&&p.Nc()};function T(a,c,e){if(b.r(a,"jssor-slider"))return;if(!F){if(a.tagName=="IMG"){y.push(a);if(!b.r(a,"src")){Q=d;a["display-origin"]=b.V(a);b.H(a)}}b.lb()&&b.C(a,(b.C(a)||0)+1)}var f=b.Bb(a);b.e(f,function(f){var h=f.tagName,i=b.j(f,"u");if(i=="player"&&!w){w=f;if(w.pInstance)O();else b.a(w,"dataavailable",O)}if(i=="caption"){if(c){b.Lc(f,b.j(f,"to"));b.Le(f,b.j(f,"bf"));b.j(f,"3d")&&b.We(f,"preserve-3d")}else if(!b.od()){var g=b.ab(f,l,d);b.Qb(g,f,a);b.Lb(f,a);f=g;c=d}}else if(!F&&!e&&!k){if(h=="A"){if(b.j(f,"u")=="image")k=b.bf(f,"IMG");else k=b.E(f,"image",d);if(k){x=f;b.V(x,"block");b.D(x,V);B=b.ab(x,d);b.s(x,"relative");b.wb(B,0);b.Z(B,"backgroundColor","#000")}}else if(h=="IMG"&&b.j(f,"u")=="image")k=f;if(k){k.border=0;b.D(k,V)}}T(f,c,e+1)})}e.gc=function(c,b){var a=u-b;Zb(L,a)};e.jb=f;n.call(e);b.Ke(o,b.j(o,"p"));b.Je(o,b.j(o,"po"));var H=b.E(o,"thumb",d);if(H){b.ab(H);b.H(H)}b.v(o);v=b.ab(gb);b.C(v,1e3);b.a(o,"click",ab);E(d);e.Sb=k;e.kd=B;e.xd=o;e.Tb=L=o;b.N(L,v);g.yb(203,S);g.yb(28,eb);g.yb(24,db)}function vc(y,f,p,q){var a=this,n=0,u=0,h,j,e,c,k,t,r,o=C[f];m.call(a,0,0);function v(){b.Vb(L);cc&&k&&o.kd&&b.N(L,o.kd);b.v(L,!k&&o.Sb)}function w(){a.Yb()}function x(b){r=b;a.db();a.Yb()}a.Yb=function(){var b=a.sb();if(!B&&!M&&!r&&s==f){if(!b){if(h&&!k){k=d;a.fd(d);g.i(i.Kd,f,n,u,h,c)}v()}var l,p=i.id;if(b!=c)if(b==e)l=c;else if(b==j)l=e;else if(!b)l=j;else l=a.Cc();g.i(p,f,b,n,j,e,c);var m=N&&(!E||F);if(b==c)(e!=c&&!(E&12)||m)&&o.qf();else(m||b!=e)&&a.Bc(l,w)}};a.hf=function(){e==c&&e==a.sb()&&a.R(j)};a.Md=function(){A&&A.jb==f&&A.vb();var b=a.sb();b<c&&g.i(i.id,f,-b-1,n,j,e,c)};a.fd=function(a){p&&b.pb(lb,a&&p.zc.uf?"":"hidden")};a.gc=function(b,a){if(k&&a>=h){k=l;v();o.Xc();A.vb();g.i(i.Jd,f,n,u,h,c)}g.i(i.Hd,f,a,n,j,e,c)};a.jd=function(a){if(a&&!t){t=a;a.yb($JssorPlayer$.fe,x)}};p&&a.bc(p);h=a.dc();a.bc(q);j=h+q.gd;e=h+q.Yc;c=a.dc()}function Kb(a,c,d){b.O(a,c);b.J(a,d)}function Zb(c,b){var a=x>0?x:fb,d=zb*b*(a&1),e=Ab*b*(a>>1&1);Kb(c,d,e)}function Pb(){qb=M;Ib=z.Cc();G=w.Y()}function gc(){Pb();if(B||!F&&E&12){z.db();g.i(i.Pd)}}function ec(f){if(!B&&(F||!(E&12))&&!z.Wc()){var d=w.Y(),b=c.ceil(G);if(f&&c.abs(H)>=a.ld){b=c.ceil(d);b+=jb}if(!(D&1))b=c.min(r-u,c.max(b,0));var e=c.abs(b-d);e=1-c.pow(1-e,5);if(!P&&qb)z.Ud(Ib);else if(d==b){tb.Ld();tb.sc()}else z.Jb(d,b,e*Vb)}}function Hb(a){!b.j(b.oc(a),"nodrag")&&b.Nb(a)}function rc(a){Yb(a,1)}function Yb(a,c){a=b.pd(a);var k=b.oc(a);if(!O&&!b.j(k,"nodrag")&&sc()&&(!c||a.touches.length==1)){B=d;yb=l;R=j;b.a(f,c?"touchmove":"mousemove",Bb);b.X();P=0;gc();if(!qb)x=0;if(c){var h=a.touches[0];ub=h.clientX;vb=h.clientY}else{var e=b.Ec(a);ub=e.x;vb=e.y}H=0;hb=0;jb=0;g.i(i.Ed,t(G),G,a)}}function Bb(e){if(B){e=b.pd(e);var f;if(e.type!="mousemove"){var l=e.touches[0];f={x:l.clientX,y:l.clientY}}else f=b.Ec(e);if(f){var j=f.x-ub,k=f.y-vb;if(c.floor(G)!=G)x=x||fb&O;if((j||k)&&!x){if(O==3)if(c.abs(k)>c.abs(j))x=2;else x=1;else x=O;if(ob&&x==1&&c.abs(k)-c.abs(j)>3)yb=d}if(x){var a=k,i=Ab;if(x==1){a=j;i=zb}if(!(D&1)){if(a>0){var g=i*s,h=a-g;if(h>0)a=g+c.sqrt(h)*5}if(a<0){var g=i*(r-u-s),h=-a-g;if(h>0)a=-g-c.sqrt(h)*5}}if(H-hb<-2)jb=0;else if(H-hb>2)jb=-1;hb=H;H=a;sb=G-H/i/(Y||1);if(H&&x&&!yb){b.Nb(e);if(!M)z.ve(sb);else z.re(sb)}}}}}function bb(){qc();if(B){B=l;b.X();b.K(f,"mousemove",Bb);b.K(f,"touchmove",Bb);P=H;z.db();var a=w.Y();g.i(i.Fd,t(a),a,t(G),G);E&12&&Pb();ec(d)}}function jc(c){if(P){b.Be(c);var a=b.oc(c);while(a&&v!==a){a.tagName=="A"&&b.Nb(c);try{a=a.parentNode}catch(d){break}}}}function Jb(a){C[s];s=t(a);tb=C[s];Tb(a);return s}function Dc(a,b){x=0;Jb(a);g.i(i.Cd,t(a),b)}function Tb(a,c){wb=a;b.e(S,function(b){b.Zb(t(a),a,c)})}function sc(){var b=i.hd||0,a=X;if(ob)a&1&&(a&=1);i.hd|=a;return O=a&~b}function qc(){if(O){i.hd&=~X;O=0}}function Xb(){var a=b.Cb();b.D(a,V);b.s(a,"absolute");return a}function t(a){return(a%r+r)%r}function kc(b,d){if(d)if(!D){b=c.min(c.max(b+wb,0),r-u);d=l}else if(D&2){b=t(b+wb);d=l}cb(b,a.pc,d)}function xb(){b.e(S,function(a){a.qc(a.Pb.xf<=F)})}function hc(){if(!F){F=1;xb();if(!B){E&12&&ec();E&3&&C[s].sc()}}}function Ec(){if(F){F=0;xb();B||!(E&12)||gc()}}function ic(){V={W:K,P:J,g:0,f:0};b.e(T,function(a){b.D(a,V);b.s(a,"absolute");b.pb(a,"hidden");b.H(a)});b.D(gb,V)}function ab(b,a){cb(b,a,d)}function cb(g,f,j){if(Rb&&(!B&&(F||!(E&12))||a.rd)){M=d;B=l;z.db();if(f==k)f=Vb;var e=Cb.sb(),b=g;if(j){b=e+g;if(g>0)b=c.ceil(b);else b=c.floor(b)}if(D&2)b=t(b);if(!(D&1))b=c.max(0,c.min(b,r-u));var i=(b-e)%r;b=e+i;var h=e==b?0:f*c.abs(i);h=c.min(h,f*u*1.5);z.Jb(e,b,h||1)}}g.Fc=function(){if(!N){N=d;C[s]&&C[s].sc()}};function W(){return b.k(y||p)}function nb(){return b.l(y||p)}g.mb=W;g.gb=nb;function Eb(c,d){if(c==k)return b.k(p);if(!y){var a=b.Cb(f);b.Oc(a,b.Oc(p));b.Hb(a,b.Hb(p));b.V(a,"block");b.s(a,"relative");b.J(a,0);b.O(a,0);b.pb(a,"visible");y=b.Cb(f);b.s(y,"absolute");b.J(y,0);b.O(y,0);b.k(y,b.k(p));b.l(y,b.l(p));b.Lc(y,"0 0");b.N(y,a);var h=b.Bb(p);b.N(p,y);b.Z(p,"backgroundImage","");b.e(h,function(c){b.N(b.j(c,"noscale")?p:a,c);b.j(c,"autocenter")&&Lb.push(c)})}Y=c/(d?b.l:b.k)(y);b.Ie(y,Y);var g=d?Y*W():c,e=d?c:Y*nb();b.k(p,g);b.l(p,e);b.e(Lb,function(a){var c=b.Dd(b.j(a,"autocenter"));b.Id(a,c)})}g.ge=Eb;n.call(g);g.hb=p=b.rb(p);var a=b.B({ob:0,ff:1,nc:1,mc:0,lc:l,Ib:1,xb:d,rd:d,nd:1,Zc:3e3,ad:1,pc:500,we:e.Wd,ld:20,bd:0,q:1,cd:0,ee:1,jc:1,ed:1},fc);a.xb=a.xb&&b.Pe();if(a.de!=k)a.Zc=a.de;if(a.ce!=k)a.cd=a.ce;var fb=a.jc&3,tc=(a.jc&4)/-4||1,mb=a.le,I=b.B({G:q,xb:a.xb},a.rf);I.ub=I.ub||I.tf;var Fb=a.ae,Z=a.Zd,eb=a.vf,Q=!a.ee,y,v=b.E(p,"slides",Q),gb=b.E(p,"loading",Q)||b.Cb(f),Nb=b.E(p,"navigator",Q),dc=b.E(p,"arrowleft",Q),ac=b.E(p,"arrowright",Q),Mb=b.E(p,"thumbnavigator",Q),pc=b.k(v),nc=b.l(v),V,T=[],uc=b.Bb(v);b.e(uc,function(a){if(a.tagName=="DIV"&&!b.j(a,"u"))T.push(a);else b.lb()&&b.C(a,(b.C(a)||0)+1)});var s=-1,wb,tb,r=T.length,K=a.Yd||pc,J=a.Xd||nc,Wb=a.bd,zb=K+Wb,Ab=J+Wb,bc=fb&1?zb:Ab,u=c.min(a.q,r),lb,x,O,yb,S=[],Qb,Sb,Ob,cc,Cc,N,E=a.ad,lc=a.Zc,Vb=a.pc,rb,ib,kb,Rb=u<r,D=Rb?a.Ib:0,X,P,F=1,M,B,R,ub=0,vb=0,H,hb,jb,Cb,w,U,z,Ub=new oc,Y,Lb=[];if(r){if(a.xb)Kb=function(a,c,d){b.zb(a,{ib:c,cb:d})};N=a.lc;g.Pb=fc;ic();b.r(p,"jssor-slider",d);b.C(v,b.C(v)||0);b.s(v,"absolute");lb=b.ab(v,d);b.Qb(lb,v);if(mb){cc=mb.wf;rb=mb.G;ib=u==1&&r>1&&rb&&(!b.od()||b.ud()>=8)}kb=ib||u>=r||!(D&1)?0:a.cd;X=(u>1||kb?fb:-1)&a.ed;var Gb=v,C=[],A,L,Db=b.Me(),ob=Db.Ue,G,qb,Ib,sb;Db.md&&b.Z(Gb,Db.md,([j,"pan-y","pan-x","none"])[X]||"");U=new zc;if(ib)A=new rb(Ub,K,J,mb,ob);b.N(lb,U.Tb);b.pb(v,"hidden");L=Xb();b.Z(L,"backgroundColor","#000");b.wb(L,0);b.Qb(L,Gb.firstChild,Gb);for(var db=0;db<T.length;db++){var wc=T[db],yc=new xc(wc,db);C.push(yc)}b.H(gb);Cb=new Ac;z=new mc(Cb,U);if(X){b.a(v,"mousedown",Yb);b.a(v,"touchstart",rc);b.a(v,"dragstart",Hb);b.a(v,"selectstart",Hb);b.a(f,"mouseup",bb);b.a(f,"touchend",bb);b.a(f,"touchcancel",bb);b.a(h,"blur",bb)}E&=ob?10:5;if(Nb&&Fb){Qb=new Fb.G(Nb,Fb,W(),nb());S.push(Qb)}if(Z&&dc&&ac){Z.Ib=D;Z.q=u;Sb=new Z.G(dc,ac,Z,W(),nb());S.push(Sb)}if(Mb&&eb){eb.mc=a.mc;Ob=new eb.G(Mb,eb);S.push(Ob)}b.e(S,function(a){a.fc(r,C,gb);a.yb(o.ec,kc)});b.Z(p,"visibility","visible");Eb(W());b.a(v,"click",jc,d);b.a(p,"mouseout",b.Rb(hc,p));b.a(p,"mouseover",b.Rb(Ec,p));xb();a.nc&&b.a(f,"keydown",function(b){if(b.keyCode==37)ab(-a.nc);else b.keyCode==39&&ab(a.nc)});var pb=a.mc;if(!(D&1))pb=c.max(0,c.min(pb,r-u));z.Jb(pb,pb,0)}};i.Ye=21;i.Ed=22;i.Fd=23;i.Ae=24;i.ye=25;i.lf=26;i.Fe=27;i.Pd=28;i.Ce=202;i.Cd=203;i.Kd=206;i.Jd=207;i.Hd=208;i.id=209;var o={ec:1},r=function(e,C){var f=this;n.call(f);e=b.rb(e);var s,A,z,r,k=0,a,m,i,w,x,h,g,q,p,B=[],y=[];function v(a){a!=-1&&y[a].Sd(a==k)}function t(a){f.i(o.ec,a*m)}f.hb=e;f.Zb=function(a){if(a!=r){var d=k,b=c.floor(a/m);k=b;r=a;v(d);v(b)}};f.qc=function(a){b.v(e,a)};var u;f.fc=function(D){if(!u){s=c.ceil(D/m);k=0;var o=q+w,r=p+x,n=c.ceil(s/i)-1;A=q+o*(!h?n:i-1);z=p+r*(h?n:i-1);b.k(e,A);b.l(e,z);for(var f=0;f<s;f++){var C=b.af();b.ze(C,f+1);var l=b.oe(g,"numbertemplate",C,d);b.s(l,"absolute");var v=f%(n+1);b.O(l,!h?o*v:f%i*o);b.J(l,h?r*v:c.floor(f/(n+1))*r);b.N(e,l);B[f]=l;a.cc&1&&b.a(l,"click",b.I(j,t,f));a.cc&2&&b.a(l,"mouseover",b.Rb(b.I(j,t,f),l));y[f]=b.tc(l)}u=d}};f.Pb=a=b.B({wd:10,Ad:10,vd:1,cc:1},C);g=b.E(e,"prototype");q=b.k(g);p=b.l(g);b.Lb(g,e);m=a.qd||1;i=a.kb||1;w=a.wd;x=a.Ad;h=a.vd-1;a.rc==l&&b.r(e,"noscale",d);a.tb&&b.r(e,"autocenter",a.tb)},t=function(a,g,h){var c=this;n.call(c);var r,q,e,f,i;b.k(a);b.l(a);function k(a){c.i(o.ec,a,d)}function p(c){b.v(a,c||!h.Ib&&e==0);b.v(g,c||!h.Ib&&e>=q-h.q);r=c}c.Zb=function(b,a,c){if(c)e=a;else{e=b;p(r)}};c.qc=p;var m;c.fc=function(c){q=c;e=0;if(!m){b.a(a,"click",b.I(j,k,-i));b.a(g,"click",b.I(j,k,i));b.tc(a);b.tc(g);m=d}};c.Pb=f=b.B({qd:1},h);i=f.qd;if(f.rc==l){b.r(a,"noscale",d);b.r(g,"noscale",d)}if(f.tb){b.r(a,"autocenter",f.tb);b.r(g,"autocenter",f.tb)}};function q(e,d,c){var a=this;m.call(a,0,c);a.td=b.Vc;a.gd=0;a.Yc=c}jssor_1_slider_init=function(){var f=[{Wb:1200,L:2}],g={lc:d,le:{G:s,ub:f,cf:1},Zd:{G:t},ae:{G:r}},e=new i("jssor_1",g);function a(){var b=e.hb.parentNode.clientWidth;if(b){b=c.min(b,768);e.ge(b)}else h.setTimeout(a,30)}a();b.a(h,"load",a);b.a(h,"resize",a);b.a(h,"orientationchange",a)}})(window,document,Math,null,true,false)</script><style>.jssorb05{position:absolute}.jssorb05 div,.jssorb05 div:hover,.jssorb05 .av{position:absolute;width:16px;height:16px;background:url('uploads/mobile-slide/b05.png') no-repeat;overflow:hidden;cursor:pointer}.jssorb05 div{background-position:-7px -7px}.jssorb05 div:hover,.jssorb05 .av:hover{background-position:-37px -7px}.jssorb05 .av{background-position:-67px -7px}.jssorb05 .dn,.jssorb05 .dn:hover{background-position:-97px -7px}.jssora12l,.jssora12r{display:block;position:absolute;width:30px;height:46px;cursor:pointer;background:url('uploads/mobile-slide/a12.png') no-repeat;overflow:hidden}.jssora12l{background-position:-16px -37px}.jssora12r{background-position:-75px -37px}.jssora12l:hover{background-position:-136px -37px}.jssora12r:hover{background-position:-195px -37px}.jssora12l.jssora12ldn{background-position:-256px -37px}.jssora12r.jssora12rdn{background-position:-315px -37px}</style><div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 768px; height: 414px; overflow: hidden; visibility: hidden;"><!-- Loading Screen -->
+<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+<div style="position:absolute;display:block;background:url('uploads/mobile-slide/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div></div> 
+<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 768px; height: 414px; overflow: hidden;">
+<div data-p="112.50" style="display: none;"><a href="http://lovin.vn/khuyen-mai/goi-in-hinh-cao-cap.html?utm_source=Mobile-slide"><img data-u="image" src="uploads/mobile-slide/banner-mobile-goi.png" /></a></div>
+<div data-p="112.50" style="display: none;"><a href="http://lovin.vn/khuyen-mai/qua-cuoi.html?utm_source=Mobile-slide"><img data-u="image" src="uploads/mobile-slide/mobile-qua-cuoi.png" /></a></div>
+<div data-p="112.50" style="display: none;"><a href="http://lovin.vn/khuyen-mai/sinh-nhat-vui.html?utm_source=Mobile-slide"><img data-u="image" src="uploads/mobile-slide/mobile-sinh-nhat.png" /></a></div>
+<a data-u="ad" href="http://lovin.vn" style="display:none"> </a></div><!-- Bullet Navigator --><div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1"><!-- bullet navigator item prototype --><div data-u="prototype" style="width:16px;height:16px;"></div></div><!-- Arrow Navigator --><span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span><span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span></div><script>jssor_1_slider_init();</script>
+<!-- #endregion Jssor Slider End -->
+	</body>
+</div>
+				<!-- Sao cmt vào json dc, json ở trên hiển thị di động thì phải. Từ từ có ảnh, có banner thì sửa code thử-->
+
+				<!-- BANNER QUẢNG CÁO--> <!-- tạo banner nhớ chỉnh lại 1349x485-->
+    <div id="slick" class="slick home-slider clearfix hidden-xs">
+	
+        <div class="slider">
+            <div class="slide">
+            	<a href="http://Kiddytoys/khuyenmai.html">
+                	<img src="uploads/slide/banner22.jpg" alt="Khuyến mãi" title="Khuyến mãi" />
+                </a>
+            </div>
+            <div class="slide">
+            	<a href="http://Kiddytoys.vn/khuyenmai.html">
+                	<img src="uploads/slide/banner33.jpg" alt="Khuyến mãi" title="Khuyến mãi" />
+                </a>
+            </div>
+            <div class="slide">
+            	<a href="http://Kiddytoys.vn/khuyenmai.html">
+                	<img src="uploads/slide/banner55.jpg" alt="Khuyến mãi" title="Khuyến mãi" />
+                </a>
+            </div>
+            <div class="slide">
+            	<a href="betrai.html">
+                	<img src="uploads/slide/banner44.jpg" alt="Bé Trai" title="Bé Trai" />
+                </a>
+            </div>
+            <div class="slide">
+            	<a href="begai.html">
+                	<img src="uploads/slide/banner11.jpg" alt="Bé Gái" title="Bé Gái" />
+                </a>
+            </div>
+        </div>
+		
+    </div>
+    			<!-- END BANNER QUẢNG CÁO-->
+    <script>
+	$(function() {
+		$('#slick .slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 800,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          fade: true,
+          cssEase: 'linear',
+          autoplay: true,
+          autoplaySpeed: 4000,
+          pauseOnHover: true,
+          arrows: false
+      });
+	});
+	
     </script>
+	
+  
+
+<div class="container">
+	
+<div class="clearfix hidden-xs">
+		<h2 class="clearfix title-lg border f-title">
+			<span>Gợi ý cho bạn</span>
+		</h2>
+		
+		<div class="row five-cols-products" id="products-group">
+		
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-hinh-our-1st-anniversary-p231.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00112006-GOI-IN-HINH-06.jpg" alt="Gối In Hình Our 1st Anniversary" title="Gối In Hình Our 1st Anniversary" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối In Hình Our 1st Anniversary" class="p-title">
+								<a href="http://lovin.vn/goi-in-hinh-our-1st-anniversary-p231.html" itemprop="name">Gối In Hình Our 1st Anniversary</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">410,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">310,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-hinh-happy-wedding-1-khung-hinh-p937.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00111020_–_Goi_Vuong_45_x_45.jpg" alt="Gối in hình Happy Wedding 1 Khung Hình" title="Gối in hình Happy Wedding 1 Khung Hình" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối in hình Happy Wedding 1 Khung Hình" class="p-title">
+								<a href="http://lovin.vn/goi-in-hinh-happy-wedding-1-khung-hinh-p937.html" itemprop="name">Gối in hình Happy Wedding 1 Khung Hình</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/tranh-da-in-hinh-happy-wedding-p915.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00441014-Tranh-da.jpg" alt="Tranh Đá In Hình Happy Wedding" title="Tranh Đá In Hình Happy Wedding" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Tranh Đá In Hình Happy Wedding" class="p-title">
+								<a href="http://lovin.vn/tranh-da-in-hinh-happy-wedding-p915.html" itemprop="name">Tranh Đá In Hình Happy Wedding</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">365,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">265,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/tranh-da-in-hinh-nen-den-cung-thong-diep-love-p909.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00441020-Tranh-da.jpg" alt="Tranh Đá In Hình Nền Đen Cùng Thông Điệp Love" title="Tranh Đá In Hình Nền Đen Cùng Thông Điệp Love" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Tranh Đá In Hình Nền Đen Cùng Thông Điệp Love" class="p-title">
+								<a href="http://lovin.vn/tranh-da-in-hinh-nen-den-cung-thong-diep-love-p909.html" itemprop="name">Tranh Đá In Hình Nền Đen Cùng Thông Điệp Love</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">365,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">265,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-full-hinh-voi-thong-diep-happy-p330.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00111018-GOI-IN-HINH-01.jpg" alt="Gối In Full Hình Với Thông Điệp Happy" title="Gối In Full Hình Với Thông Điệp Happy" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối In Full Hình Với Thông Điệp Happy" class="p-title">
+								<a href="http://lovin.vn/goi-in-full-hinh-voi-thong-diep-happy-p330.html" itemprop="name">Gối In Full Hình Với Thông Điệp Happy</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/tranh-da-in-hinh-nen-xanh-anniversary-p280.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00441007-tranh-da-in-hinh-Front.jpg" alt="Tranh Đá In Hình Nền Xanh Anniversary" title="Tranh Đá In Hình Nền Xanh Anniversary" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Tranh Đá In Hình Nền Xanh Anniversary" class="p-title">
+								<a href="http://lovin.vn/tranh-da-in-hinh-nen-xanh-anniversary-p280.html" itemprop="name">Tranh Đá In Hình Nền Xanh Anniversary</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">365,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">265,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-hinh-happy-anniversary-p268.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00111013-GOI-IN-HINH-01.jpg" alt="Gối In Hình Happy Anniversary" title="Gối In Hình Happy Anniversary" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối In Hình Happy Anniversary" class="p-title">
+								<a href="http://lovin.vn/goi-in-hinh-happy-anniversary-p268.html" itemprop="name">Gối In Hình Happy Anniversary</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-hinh-soc-ngang-anniversary-p264.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00112026-GOI-IN-HINH-26.jpg" alt="Gối In Hình Sọc Ngang Anniversary" title="Gối In Hình Sọc Ngang Anniversary" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối In Hình Sọc Ngang Anniversary" class="p-title">
+								<a href="http://lovin.vn/goi-in-hinh-soc-ngang-anniversary-p264.html" itemprop="name">Gối In Hình Sọc Ngang Anniversary</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">410,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">310,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-hinh-happy-anniversary-3-khung-hinh-p247.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00112014-GOI-IN-HINH-14.jpg" alt="Gối In Hình Happy Anniversary 3 Khung Hình" title="Gối In Hình Happy Anniversary 3 Khung Hình" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối In Hình Happy Anniversary 3 Khung Hình" class="p-title">
+								<a href="http://lovin.vn/goi-in-hinh-happy-anniversary-3-khung-hinh-p247.html" itemprop="name">Gối In Hình Happy Anniversary 3 Khung Hình</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">410,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">310,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-hinh-vuong-love-family-p244.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00111004-GOI-IN-HINH-01.jpg" alt="Gối In Hình Vuông Love Family" title="Gối In Hình Vuông Love Family" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối In Hình Vuông Love Family" class="p-title">
+								<a href="http://lovin.vn/goi-in-hinh-vuong-love-family-p244.html" itemprop="name">Gối In Hình Vuông Love Family</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-in-hinh-vuong-thong-diep-my-true-love-p240.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/TK00111002-GOI-IN-HINH-01.jpg" alt="Gối In Hình Vuông Thông Điệp My True Love" title="Gối In Hình Vuông Thông Điệp My True Love" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối In Hình Vuông Thông Điệp My True Love" class="p-title">
+								<a href="http://lovin.vn/goi-in-hinh-vuong-thong-diep-my-true-love-p240.html" itemprop="name">Gối In Hình Vuông Thông Điệp My True Love</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+					
+		</div>
+		
+		
+	</div>
+
+
+
+	
+
+
+<div class="clearfix">
+    <h1 class="clearfix title-lg border f-title">
+        <span>Quà Tặng In Hình</span>
+    </h1>
+    <div class="row product-nav-qua-tang">
+        <div class="col-right visible-xs">
+            <a href="qua-tang.html"><img src="uploads/catalogue/u484.jpg" style="width:100%" /></a>
+        </div>
+		
+		<div class="col-right visible-xs">
+            <a href="khuyen-mai/qua-cuoi.html"><img src="uploads/catalogue/qua-cuoi.jpg" style="width:100%" /></a>
+        </div>
+		
+		<div class="col-right visible-xs">
+            <a href="khuyen-mai/sinh-nhat-vui.html"><img src="uploads/catalogue/sinh-nhat.jpg" style="width:100%" /></a>
+        </div>		
+		
+		<div class="col-right visible-xs">
+            <a href="khuyen-mai/qua-cuoi.html"><img src="uploads/catalogue/ky-niem-ngay-cuoi.jpg" style="width:100%" /></a>
+        </div>
+
+    	<div class="col-left">
+    	<a class="view-all" href="qua-tang.html">Xem tất cả »</a>
+    	<div class="clearfix"></div>
+    	    		<div class="row">
+	    		<div class="separator">
+	    				    			<div class="col-sm-4 col-xs-6 item">
+	    				<a class="title" href="http://lovin.vn/qua-tang/goi-in-hinh.html"><img src="http://lovin.vn/uploads/catalogue/TK00112006_fb.jpg" alt="Gối In Hình" title="Gối In Hình" class="img-responsive" /></a>
+	    				<a class="title" href="http://lovin.vn/qua-tang/goi-in-hinh.html">Gối In Hình</a>
+					</div>
+	    				    			<div class="col-sm-4 col-xs-6 item">
+	    				<a class="title" href="http://lovin.vn/qua-tang/tranh-ghep-hinh.html"><img src="http://lovin.vn/uploads/catalogue/tranh-ghep-hinh1.jpg" alt="Tranh Ghép Hình" title="Tranh Ghép Hình" class="img-responsive" /></a>
+	    				<a class="title" href="http://lovin.vn/qua-tang/tranh-ghep-hinh.html">Tranh Ghép Hình</a>
+					</div>
+	    				    			<div class="col-sm-4 col-xs-6 item">
+	    				<a class="title" href="http://lovin.vn/qua-tang/tranh-da.html"><img src="http://lovin.vn/uploads/catalogue/TK00441019-Tranh-da.jpg" alt="Tranh Đá" title="Tranh Đá" class="img-responsive" /></a>
+	    				<a class="title" href="http://lovin.vn/qua-tang/tranh-da.html">Tranh Đá</a>
+					</div>
+	    				    		</div>
+    		</div><!--row-->
+    	    	</div>
+    	<div class="col-right hidden-xs">
+    		<a href="qua-tang.html"><img src="uploads/catalogue/u484.jpg" style="width:100%" /></a>
+    	</div>
+    </div><!--row-->
+</div>
+
+
+<a name="home_scrollproduct" id="home_scrollproduct"></a>
+    <div class="clearfix">
+        <h1 class="clearfix title-lg border f-title">
+            <span>SHOP Nghệ Thuật</span>
+        </h1>
+		<div class="col-right visible-xs">
+            <a href="shop.html"><img src="uploads/catalogue/Banner-Shop.jpg" style="width:100%" /></a>
+        </div>
+		      
+        <div class="clearfix row row-mar-20" id="home_productnavcnh">
         
-    <script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
-
-    <script src="/bundles/jquery?v=u6JBRL7ljstB70-DeYP3gXfqcNRekaqokBa1FOwkSus1"></script>
-
-    <script src="/bundles/bootstrap?v=J_7eXO_Eeg4NOsX5o-U_LIAS8QDeVFOgMVghDMGYccI1"></script>
-
+                        
+                <div class="col-sm-6 col-xs-12 col-padd-20">
+                
+                    <div class="clearfix" id="home-nav-group">
+                    
+                        <div class="clearfix" id="home-nav-product">
+                            
+                            <div class="col-xs-9 pimg-lg">
+                                <a href="http://lovin.vn/goi-vuong-mua-ta-da-yeu-p546.html">
+                                <img src="http://lovin.vn/uploads/products/DS00111TK0038_–_Goi_Vuong.jpg" alt="Gối Vuông - Mùa ta đã yêu" title="Gối Vuông - Mùa ta đã yêu" class="img-responsive img-lg" />
+                                </a>
+                            </div>
+                            <ul class="col-xs-3  p-list">
+                            
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/goi-vuong-hoa-tiet-pineapple-p402.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00111TK0011_–_Goi_Vuong.jpg" alt="Gối Vuông - Họa tiết Pineapple " title="Gối Vuông - Họa tiết Pineapple " class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/goi-vuong-dung-cho-doi-vi-p762.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00111TK0091_–_Goi_Vuong.jpg" alt="Gối Vuông - Đừng chờ đợi vì..." title="Gối Vuông - Đừng chờ đợi vì..." class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li class="p-last">
+                                        <a href="http://lovin.vn/goi-vuong-nhin-cai-gi-p786.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00111TK0095_–_Goi_Vuong.jpg" alt="Gối Vuông - Nhìn cái gì" title="Gối Vuông - Nhìn cái gì" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                            </ul>
+                        
+                        </div>
+                        
+                        <div class="clearfix nav-caption row">
+                            <div class="col-md-9 col-xs-12 caption-text">
+                                <h2 class="title">
+                                    <a href="http://lovin.vn/shop/goi.html">Gối</a>
+                                </h2>
+                                Gối nghệ thuật được may trực tiếp từ bàn tay người nghệ nhân lành nghề, bản in chất lượng cao trên 2 mặt gối, dây kéo được trang trí thẩm mỹ để không làm ảnh hưởng người sử dụng,...                            </div>
+                                <!-- -->
+                            <ul class="col-sm-3 hidden-xs hidden-sm caption-list">
+                                <li>4 sản phẩm</li>
+                                <li>Từ 260,000&nbsp;<u>đ</u> </li>
+                                <li><a href="http://lovin.vn/shop/goi.html">Xem tất cả</a></li>
+                            </ul>                            
+                            
+                        </div>
+                    
+                    
+                    </div>
+                
+                
+                </div>
+        
+                    
+                                    
+                        
+                <div class="col-sm-6 col-xs-12 col-padd-20">
+                
+                    <div class="clearfix" id="home-nav-group">
+                    
+                        <div class="clearfix" id="home-nav-product">
+                            
+                            <div class="col-xs-9 pimg-lg">
+                                <a href="http://lovin.vn/op-lung-iphone-hay-lam-nhung-gi-ban-thich-moi-ngay-p752.html">
+                                <img src="http://lovin.vn/uploads/products/DS00441TK0090_–_Iphone_case_5,5s.jpg" alt="Ốp lưng iPhone - Hãy làm những gì bạn thích mỗi ngày" title="Ốp lưng iPhone - Hãy làm những gì bạn thích mỗi ngày" class="img-responsive img-lg" />
+                                </a>
+                            </div>
+                            <ul class="col-xs-3  p-list">
+                            
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/op-lung-iphone-happy-day-p524.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00441TK0042_–_Iphone_case_5,5s.jpg" alt="Ốp lưng iPhone - Happy Day" title="Ốp lưng iPhone - Happy Day" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/op-lung-iphone-mua-ta-da-yeu-p542.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00441TK0038_–_Iphone_case_5,5s.jpg" alt="Ốp lưng iPhone - Mùa ta đã yêu" title="Ốp lưng iPhone - Mùa ta đã yêu" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li class="p-last">
+                                        <a href="http://lovin.vn/op-lung-iphone-hoa-tiet-dan-toc-ethnic-p602.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00441TK0066_–_Iphone_case_5,5s.jpg" alt="Ốp lưng iPhone - Họa tiết dân tộc - Ethnic" title="Ốp lưng iPhone - Họa tiết dân tộc - Ethnic" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                            </ul>
+                        
+                        </div>
+                        
+                        <div class="clearfix nav-caption row">
+                            <div class="col-md-9 col-xs-12 caption-text">
+                                <h2 class="title">
+                                    <a href="http://lovin.vn/shop/op-lung.html">Ốp Lưng</a>
+                                </h2>
+                                Ốp lưng với những thiết kế ấn tượng dùng để bảo vệ mặt sau "dế yêu" của bạn. Sử dụng chất liệu nhựa silicon cao cấp, đảm bảo tính thẩm mỹ khi các nút bấm không ảnh hưởng                            </div>
+                                <!-- -->
+                            <ul class="col-sm-3 hidden-xs hidden-sm caption-list">
+                                <li>4 sản phẩm</li>
+                                <li>Từ 165,000&nbsp;<u>đ</u> </li>
+                                <li><a href="http://lovin.vn/shop/op-lung.html">Xem tất cả</a></li>
+                            </ul>                            
+                            
+                        </div>
+                    
+                    
+                    </div>
+                
+                
+                </div>
+        
+                    
+                    <div class="clearfix">&nbsp;</div>                
+                        
+                <div class="col-sm-6 col-xs-12 col-padd-20">
+                
+                    <div class="clearfix" id="home-nav-group">
+                    
+                        <div class="clearfix" id="home-nav-product">
+                            
+                            <div class="col-xs-9 pimg-lg">
+                                <a href="http://lovin.vn/ly-su-dua-nhau-di-tron-p515.html">
+                                <img src="http://lovin.vn/uploads/products/DS00221TK0034–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Đưa nhau đi trốn" title="Ly Sứ - Đưa nhau đi trốn" class="img-responsive img-lg" />
+                                </a>
+                            </div>
+                            <ul class="col-xs-3  p-list">
+                            
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/ly-su-hay-lam-nhung-gi-ban-thich-moi-ngay-p755.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00221TK0090_–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Hãy làm những gì bạn thích mỗi ngày" title="Ly Sứ - Hãy làm những gì bạn thích mỗi ngày" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/ly-su-never-say-never-p719.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00221TK0084_–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Never say never" title="Ly Sứ - Never say never" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li class="p-last">
+                                        <a href="http://lovin.vn/ly-su-mua-ta-da-yeu-p545.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00221TK0038_–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Mùa ta đã yêu" title="Ly Sứ - Mùa ta đã yêu" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                            </ul>
+                        
+                        </div>
+                        
+                        <div class="clearfix nav-caption row">
+                            <div class="col-md-9 col-xs-12 caption-text">
+                                <h2 class="title">
+                                    <a href="http://lovin.vn/shop/ly-su.html">Ly sứ</a>
+                                </h2>
+                                Truyền cảm hứng cho cuộc sống mỗi ngày từ ly sứ nghệ thuật với hàng trăm thiết kế độc đáo, làm tươi mới cuộc sống mỗi ngày                            </div>
+                                <!-- -->
+                            <ul class="col-sm-3 hidden-xs hidden-sm caption-list">
+                                <li>4 sản phẩm</li>
+                                <li>Từ 135,000&nbsp;<u>đ</u> </li>
+                                <li><a href="http://lovin.vn/shop/ly-su.html">Xem tất cả</a></li>
+                            </ul>                            
+                            
+                        </div>
+                    
+                    
+                    </div>
+                
+                
+                </div>
+        
+                    
+                                    
+                        
+                <div class="col-sm-6 col-xs-12 col-padd-20">
+                
+                    <div class="clearfix" id="home-nav-group">
+                    
+                        <div class="clearfix" id="home-nav-product">
+                            
+                            <div class="col-xs-9 pimg-lg">
+                                <a href="http://lovin.vn/tui-vai-tote-hoa-tiet-trai-cay-p505.html">
+                                <img src="http://lovin.vn/uploads/products/DS00551TK0033_–_Tui_Tote_Deo_Vai.jpg" alt="Túi Vải Tote - Họa tiết trái cây" title="Túi Vải Tote - Họa tiết trái cây" class="img-responsive img-lg" />
+                                </a>
+                            </div>
+                            <ul class="col-xs-3  p-list">
+                            
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/tui-vai-tote-hai-sieu-quay-p442.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00551TK0023_–_Tui_Tote_Deo_Vai.jpg" alt="Túi Vải Tote - Hai Siêu quậy" title="Túi Vải Tote - Hai Siêu quậy" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li >
+                                        <a href="http://lovin.vn/tui-vai-tote-dua-nhau-di-tron-p511.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00551TK0034–_Tui_Tote_Deo_Vai.jpg" alt="Túi Vải Tote - Đưa nhau đi trốn" title="Túi Vải Tote - Đưa nhau đi trốn" class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                                    <li class="p-last">
+                                        <a href="http://lovin.vn/tui-vai-tote-dung-cho-doi-vi-p757.html">
+                                        <img src="http://lovin.vn/uploads/products/DS00551TK0091_–_Tui_Tote_Deo_Vai.jpg" alt="Túi Vải Tote - Đừng chờ đợi vì..." title="Túi Vải Tote - Đừng chờ đợi vì..." class="img-responsive" />
+                                        </a>
+                                    </li>
+                                                                
+                            </ul>
+                        
+                        </div>
+                        
+                        <div class="clearfix nav-caption row">
+                            <div class="col-md-9 col-xs-12 caption-text">
+                                <h2 class="title">
+                                    <a href="http://lovin.vn/shop/tui-tote.html">Túi Tote</a>
+                                </h2>
+                                Được sản xuất từ chất liệu canvas. Túi tote là sản phẩm thời trang dành cho phái nữ đang được ưa chuộng.                            </div>
+                                <!-- -->
+                            <ul class="col-sm-3 hidden-xs hidden-sm caption-list">
+                                <li>4 sản phẩm</li>
+                                <li>Từ 185,000&nbsp;<u>đ</u> </li>
+                                <li><a href="http://lovin.vn/shop/tui-tote.html">Xem tất cả</a></li>
+                            </ul>                            
+                            
+                        </div>
+                    
+                    
+                    </div>
+                
+                
+                </div>
+        
+                    
+                    <div class="clearfix">&nbsp;</div>                
+                    
+        </div>
     
     
-    <script>
-        $(function () {
-            //setFilter();
-            toggleLoadMore();
-            $("#btnLoadMore").click(function (event) {
-                var action = $.cookie("action");
-                if (action == "Index") {
-                    $.ajax({
-                        type: 'GET',
-                        url: '/Post/' + action + '?Page=' + $.cookie("next_page"),
-                        success: function (data) {
-                            $('#divProduct').append(data);
-                            toggleLoadMore();
-                        }
-                    });
-                }
-                else if (action == "Filter")
-                {
-                    var filter_keyword = $.cookie("filter_keyword");
-                    var filter_category = $.cookie("filter_category");
-                    $.ajax({
-                        type: 'GET',
-                        url: '/Post/' + action + '?Category=' + filter_category + '&Keyword=' + filter_keyword + '&Floor=' + filter_floor + '&Ceiling=' + filter_ceiling + '&Brand=' + filter_brand + '&Page=' + $.cookie("next_page"),
-                        success: function (data) {
-                            $('#divProduct').append(data);
-                            toggleLoadMore();
-                            //setFilter();
-                        }
-                    });
-                }
-            });
-        });
+    </div>
+
+
+<div class="clearfix">
+		<h2 class="clearfix title-lg border f-title">
+			<span>Sản phẩm <b>HOT</b></span>
+		</h2>
+		
+		<div class="row five-cols-products" id="products-group">
+		
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-vuong-mua-ta-da-yeu-p546.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00111TK0038_–_Goi_Vuong.jpg" alt="Gối Vuông - Mùa ta đã yêu" title="Gối Vuông - Mùa ta đã yêu" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối Vuông - Mùa ta đã yêu" class="p-title">
+								<a href="http://lovin.vn/goi-vuong-mua-ta-da-yeu-p546.html" itemprop="name">Gối Vuông - Mùa ta đã yêu</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/ly-su-dua-nhau-di-tron-p515.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00221TK0034–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Đưa nhau đi trốn" title="Ly Sứ - Đưa nhau đi trốn" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Ly Sứ - Đưa nhau đi trốn" class="p-title">
+								<a href="http://lovin.vn/ly-su-dua-nhau-di-tron-p515.html" itemprop="name">Ly Sứ - Đưa nhau đi trốn</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">180,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">135,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-vuong-hoa-tiet-pineapple-p402.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00111TK0011_–_Goi_Vuong.jpg" alt="Gối Vuông - Họa tiết Pineapple " title="Gối Vuông - Họa tiết Pineapple " class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối Vuông - Họa tiết Pineapple " class="p-title">
+								<a href="http://lovin.vn/goi-vuong-hoa-tiet-pineapple-p402.html" itemprop="name">Gối Vuông - Họa tiết Pineapple </a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/tui-vai-tote-hai-sieu-quay-p442.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00551TK0023_–_Tui_Tote_Deo_Vai.jpg" alt="Túi Vải Tote - Hai Siêu quậy" title="Túi Vải Tote - Hai Siêu quậy" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Túi Vải Tote - Hai Siêu quậy" class="p-title">
+								<a href="http://lovin.vn/tui-vai-tote-hai-sieu-quay-p442.html" itemprop="name">Túi Vải Tote - Hai Siêu quậy</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">235,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">185,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/op-lung-iphone-happy-day-p524.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00441TK0042_–_Iphone_case_5,5s.jpg" alt="Ốp lưng iPhone - Happy Day" title="Ốp lưng iPhone - Happy Day" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Ốp lưng iPhone - Happy Day" class="p-title">
+								<a href="http://lovin.vn/op-lung-iphone-happy-day-p524.html" itemprop="name">Ốp lưng iPhone - Happy Day</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">225,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">165,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/ly-su-hay-lam-nhung-gi-ban-thich-moi-ngay-p755.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00221TK0090_–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Hãy làm những gì bạn thích mỗi ngày" title="Ly Sứ - Hãy làm những gì bạn thích mỗi ngày" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Ly Sứ - Hãy làm những gì bạn thích mỗi ngày" class="p-title">
+								<a href="http://lovin.vn/ly-su-hay-lam-nhung-gi-ban-thich-moi-ngay-p755.html" itemprop="name">Ly Sứ - Hãy làm những gì bạn thích mỗi ngày</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">180,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">135,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/op-lung-iphone-hoa-tiet-trai-cay-p506.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00441TK0033_–_Iphone_case_5,5s.jpg" alt="Ốp lưng iPhone - Họa tiết trái cây" title="Ốp lưng iPhone - Họa tiết trái cây" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Ốp lưng iPhone - Họa tiết trái cây" class="p-title">
+								<a href="http://lovin.vn/op-lung-iphone-hoa-tiet-trai-cay-p506.html" itemprop="name">Ốp lưng iPhone - Họa tiết trái cây</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">225,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">165,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/ly-su-minion-poka-say-what-p737.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00221TK0087_–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Minion poka say what" title="Ly Sứ - Minion poka say what" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Ly Sứ - Minion poka say what" class="p-title">
+								<a href="http://lovin.vn/ly-su-minion-poka-say-what-p737.html" itemprop="name">Ly Sứ - Minion poka say what</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">180,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">135,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-vuong-mot-ky-uc-da-tung-rat-dep-p774.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00111TK0093_–_Goi_Vuong.jpg" alt="Gối Vuông - Một ký ức đã từng rất đẹp" title="Gối Vuông - Một ký ức đã từng rất đẹp" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối Vuông - Một ký ức đã từng rất đẹp" class="p-title">
+								<a href="http://lovin.vn/goi-vuong-mot-ky-uc-da-tung-rat-dep-p774.html" itemprop="name">Gối Vuông - Một ký ức đã từng rất đẹp</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/ly-su-du-ngoan-london-p521.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00221TK0035_–_Ly_Su_(Phai).jpg" alt="Ly Sứ - Du Ngoạn London " title="Ly Sứ - Du Ngoạn London " class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Ly Sứ - Du Ngoạn London " class="p-title">
+								<a href="http://lovin.vn/ly-su-du-ngoan-london-p521.html" itemprop="name">Ly Sứ - Du Ngoạn London </a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">180,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">135,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/goi-vuong-you-are-my-love-p390.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00111TK0006_–_Goi_Vuong.jpg" alt="Gối Vuông - You are my love" title="Gối Vuông - You are my love" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Gối Vuông - You are my love" class="p-title">
+								<a href="http://lovin.vn/goi-vuong-you-are-my-love-p390.html" itemprop="name">Gối Vuông - You are my love</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">360,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">260,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/tui-vai-tote-chanh-nhu-cho-p391.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00551TK0008_–_Tui_Tote_Deo_Vai.jpg" alt="Túi Vải Tote - Chảnh như chó" title="Túi Vải Tote - Chảnh như chó" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Túi Vải Tote - Chảnh như chó" class="p-title">
+								<a href="http://lovin.vn/tui-vai-tote-chanh-nhu-cho-p391.html" itemprop="name">Túi Vải Tote - Chảnh như chó</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">235,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">185,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+							<div class="item">
+					<div class="p-item" itemscope >
+						<figure class="p-img">
+							<a href="http://lovin.vn/tui-vai-tote-always-believe-in-your-self-p355.html" itemprop="url">
+							<img src="http://lovin.vn/uploads/products/DS00551TK0001---Tui-tote-deo-vai(pin).jpg" alt="Túi Vải Tote - Always Believe In Your Self" title="Túi Vải Tote - Always Believe In Your Self" class="img-responsive" itemprop="image" >
+														</a>
+						</figure>
+						<div class="clearfix p-caption">
+							<h3 title="Túi Vải Tote - Always Believe In Your Self" class="p-title">
+								<a href="http://lovin.vn/tui-vai-tote-always-believe-in-your-self-p355.html" itemprop="name">Túi Vải Tote - Always Believe In Your Self</a>
+							</h3>
+							<p class="p-price" itemprop="price"><s itemprop="highPrice">235,000&nbsp;<u>đ</u></s><span class="hidden-xs hidden-sm">&nbsp;-&nbsp;</span><b itemprop="lowPrice">185,000&nbsp;<u>đ</u></b></p>
+						</div>
+					</div>
+				</div>
+			
+					
+		</div>
+		
+		
+	</div>
 
 
 
-        function toggleLoadMore()
-        {
-            var next_page = parseInt($.cookie("next_page"));
-            var total_page = parseInt($.cookie("total_page")) + 1;
-            if (next_page >= total_page)
-                $("#btnLoadMore").hide();
-            else
-                $("#btnLoadMore").show();
-        }
-    </script>
+	
+
+
+	<!-- Google Code dành cho Thẻ tiếp thị lại --><script type="text/javascript">var google_tag_params = {dynx_itemid: '',dynx_pagetype: 'home',dynx_totalvalue: '',};</script><script type="text/javascript">/* <![CDATA[ */var google_conversion_id = 1012375026;var google_custom_params = window.google_tag_params;var google_remarketing_only = true;/* ]]> */</script><script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script><noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1012375026/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+<script>
+$('.five-cols-products').slick({
+  dots: false,
+  navs: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+    </div>
+    
+	<footer id="footer" class="clearfix">
+        
+        <div class="testimonials">
+	<div class="container">
+		<h2>Ý Kiến Khách Hàng</h2>
+		<div class="row testimonials-grid">
+						<div class="col-sm-3 col-xs-12 item">
+								<div class="quote">
+					Hàng in đẹp, dịch vụ tốt, cho 5 sao luôn				</div>
+				<div class="user">
+					<div class="avatar">
+						<img src="uploads/testimonials/reviews_thu_ngo.jpg" />
+					</div>
+					<div class="user-info">
+						<p class="name">Thu Ngo</p>
+						<p class="title">Ho Chi Minh City, Vietnam</p>
+					</div>
+				</div>
+							</div>
+									<div class="col-sm-3 col-xs-12 item">
+								<div class="user">
+					<div class="avatar">
+						<img src="uploads/testimonials/review_dung_nguyen.jpg" />
+					</div>
+					<div class="user-info">
+						<p class="name">Dũng Nguyễn</p>
+						<p class="title">International University Vietnam</p>
+					</div>
+				</div>
+				<div class="quote">
+					Web chuyên nghiệp, Tư vấn nhiệt tình, giao hàng quá nhanh. Sản phẩm in đẹp, chất liệu xịn. 
+Quá tuyệt !				</div>
+							</div>
+									<div class="col-sm-3 col-xs-12 item">
+								<div class="quote">
+					Em nhận được đơn hàng rồi nha. Em cảm ơn Lovin nhiều. Sản phẩm rất đẹp ak				</div>
+				<div class="user">
+					<div class="avatar">
+						<img src="uploads/testimonials/Capture2.PNG" />
+					</div>
+					<div class="user-info">
+						<p class="name">Nguyễn Thanh Mai</p>
+						<p class="title">ĐH Công Nghiệp Thực Phẩm TPHCM</p>
+					</div>
+				</div>
+							</div>
+									<div class="col-sm-3 col-xs-12 item">
+								<div class="user">
+					<div class="avatar">
+						<img src="uploads/testimonials/review_Thùy_giang.jpg" />
+					</div>
+					<div class="user-info">
+						<p class="name">Thùy Giang Phạm</p>
+						<p class="title">Accountant tại Nagase Co.,Ltd</p>
+					</div>
+				</div>
+				<div class="quote">
+					Nhân viên rất nhiệt tình, sản phẩm chất lượng. Mình đã đặt sản phẩm lần 2 để tặng quà cưới. Nhân viên chăm sóc khách hàng rất nice. Mình cảm thấy vô cùng hài lòng về sản phẩm cũng như thái độ làm việc chuyên nghiệp của các bạn.				</div>
+							</div>
+								</div>
+	</div>
+</div>
+
+<script>
+$('.testimonials-grid').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+    	<div class="container">
+			
+<div class="clearfix footer-border">    
+    
+    <div class="clearfix footer-form" style="background-image:url(http://lovin.vn/uploads/slide/designer_header1.jpg)">
+    
+        <div class="row">
+        
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <form action="//lovin.us10.list-manage.com/subscribe/post?u=fa142dcc35c91212ae111abad&amp;id=f26d47f717" method="post" target="_blank">
+                    <label>Nhận tin khuyến mãi</label>
+                    <div class="clearfix">
+                        <input type="text" name="EMAIL" placeholder="Email của bạn.">
+                        <input type="hidden" name="checkin" value="promotion" />
+                        <button type="submit" class="btn">Nhận</button>
+                    </div>
+                </form>
+            </div>
+                <!-- -->
+            
+        </div>
+    
+    </div>    
+    
+</div>
+	<!-- -->
+    
+    
+<div class="clearfix hidden-xs hidden-sm">
+
+	<div class="footer-col5">
+    	<h2 class="f-title">Giới Thiệu</h2>
+        <ul clearfix>
+        
+        	            
+                <li><a href="http://lovin.vn/gioi-thieu/ve-lovin-vn.html">Về Lovin.vn</a></li>
+                
+            	                        <li><a href="http://lovin.vn/qua-tang.html">Quà tặng</a></li>
+                        <li><a href="http://lovin.vn/tang-qua-gi/" target="_blank">Blog</a></li>
+                        
+            					
+                        
+                <li><a href="http://lovin.vn/gioi-thieu/tuyen-dung.html">Tuyển dụng</a></li>
+                
+            					
+                        
+                <li><a href="http://lovin.vn/gioi-thieu/lien-he.html">Liên Hệ</a></li>
+                
+            					
+                                </ul>
+    </div>
+    	<!-- -->
+	<div class="footer-col5">
+    	<h2 class="f-title">Mua sắm online</h2>
+        <ul clearfix>
+        	                <li><a href="http://lovin.vn/mua-sam-online/ca-nhan-hoa-truc-tuyen.html">Cá nhân hóa trực tuyến</a></li>
+                            <li><a href="http://lovin.vn/mua-sam-online/phuong-thuc-thanh-toan.html">Phương thức thanh toán</a></li>
+                            <li><a href="http://lovin.vn/mua-sam-online/giao-hang-va-nhan-hang.html">Giao hàng và nhận hàng</a></li>
+                            <li><a href="http://lovin.vn/mua-sam-online/dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+                    </ul>
+    </div>
+    	<!-- -->
+	<div class="footer-col5">
+    	<h2 class="f-title">Tài Khoản</h2>
+        <ul clearfix>
+        	<li><a href="http://lovin.vn/user.html">Tài khoản của tôi</a></li>
+        	<li><a href="http://lovin.vn/user/edit/thong-tin-ca-nhan.html">Cập nhật thông tin</a></li>
+        	<li><a href="http://lovin.vn/user/order.html">Quản lý đơn hàng</a></li>
+        	<li><a href="http://lovin.vn/user/comment.html">Đánh giá của tôi</a></li>
+        </ul>
+    </div>
+    	<!-- -->
+	<div class="footer-col5">
+    	<h2 class="f-title">Khách hàng</h2>
+        <ul clearfix>
+        	<li><a href="http://lovin.vn/kiem-tra-don-hang.html">Kiểm tra đơn hàng</a></li>
+        	                <li><a href="http://lovin.vn/khach-hang/huong-dan-dat-hang.html">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="http://lovin.vn/khach-hang/cam-ket-hai-long.html">Cam kết hài lòng</a></li>
+                            <li><a href="http://lovin.vn/khach-hang/chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+                    </ul>
+    </div>
+    	<!-- -->
+	<div class="footer-col5 pluginfb">
+		
+        <div class="clearfix">
+        	<div class="fb-like" data-href="https://www.facebook.com/LOVIN.VN.VIETNAM" data-width="226" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+
+        	
+            
+            <div class="clearfix text-center fsocial-group">
+                <a rel="nofollow" href="https://www.facebook.com/LOVIN.VN.VIETNAM" target="_blank"><i class="social social-facebook"></i></a>
+                <a rel="nofollow" href="https://twitter.com/Lovinvn" target="_blank"><i class="social social-twitter"></i></a>
+                <a rel="nofollow" href="https://plus.google.com/u/0/b/111200223565188107266/111200223565188107266/posts" target="_blank"><i class="social social-google"></i></a>
+                <a rel="nofollow" href="#" target="_blank"><i class="social social-youtube"></i></a>
+                
+                
+           </div>
     
 
+
+            
+        </div>
+    <p><a href="http://lovin.vn/doanh-nghiep/?utm_source=footer_banner_lovin" target="_blank" title="Quà Tặng Doanh Nghiệp"><img alt="Quà Tặng Doanh Nghiệp" src="http://lovin.vn/uploads/catalogue/dn.jpg"></a></p>    
+
+</div>    
+    
+	<!-- -->    	
+	<p><center><a href="http://lovin.vn/doanh-nghiep/?utm_source=footer_banner_lovin" class="visible-xs visible-sm" target="_blank" title="Quà Tặng Doanh Nghiệp"><img alt="Quà Tặng Doanh Nghiệp" src="http://lovin.vn/uploads/catalogue/dn.jpg" style="margin-top:-30px;margin-bottom:16px;" ></a></center></p>
+<div class="clearfix visible-xs visible-sm" id="footer-xs-nav">
+    <ul clearfix>
+        <li><a href="http://lovin.vn/gioi-thieu.html">Về Lovin</a></li>
+        <li><a href="http://lovin.vn/user.html">Tài khoản của tôi</a></li>
+        <li><a href="http://lovin.vn/kiem-tra-don-hang.html">Kiểm tra đơn hàng</a></li>
+        <li><a href="http://lovin.vn/mua-sam-online/giao-hang-va-nhan-hang.html">Giao Hàng & Nhận Hàng</a></li>
+		<li><a href="http://lovin.vn/mua-sam-online/phuong-thuc-thanh-toan.html">Phương Thức Thanh Toán</a></li>
+		<li><a href="http://lovin.vn/khach-hang/huong-dan-dat-hang.html">Hướng Dẫn Đặt Mua</a></li>
+		<li><a href="http://lovin.vn/dieu-khoan-chinh-sach.html">Điều Khoản & Chính Sách</a></li>
+		<li><a href="http://lovin.vn/gioi-thieu/lien-he.html">Liên Hệ</a></li>
+		<li class="xs_hotline">
+        	<center>
+            	<b>Hotline:&nbsp;</b>
+                <span>(+84) 933 563 599</span>
+            </center>
+        </li>
+  	</ul>
+</div>     
+<div	
+
+<div class="address hidden-lg">
+<center>
+<p><span>Công Ty TNHH Thương Mại Điện Tử LOVIN</span></p>
+
+<p><span>Hỗ Trợ: hotro@lovin.vn</p></span>
+
+<p><span>Giấy phép&nbsp;Đăng ký Kinh doanh Số 0313491797&nbsp;cấp bởi&nbsp;Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh</span></p>
+
+<p><span>Văn Phòng: </span>Số 81/18 Huỳnh Văn Nghệ, Phường 12, Quận Gò Vấp, TPHCM, Việt Nam</span></p>
+
+<p><span>Kho &amp; Xưởng Sản Xuất: KP2, Thạnh Xuân 25, P. Thạnh Xuân, Q.12, TPHCM, Việt Nam</span></p>
+
+<p><a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=19240" target="_blank" title="Đã Thông Báo Trang TMĐT"><img alt="Đã thông báo với Bộ Công Thương" src="http://lovin.vn/uploads/products/da-thong-bao-bo-cong-thuong.png"></a>
+</center>
+</div>   
+     
+<div class="clearfix footer-auhor f-title visible-lg">
+
+	<p><span style="font-size:14px;">&copy; 2016&nbsp;Bản quyền Trang Thương Mại Điện Tử&nbsp;<a href="http://lovin.vn/" target="_blank">Lovin.vn</a>. </span></p>
+
+<p>C&ocirc;ng Ty TNHH Thương Mại Điện Tử LOVIN</p>
+
+<p><span style="font-size:14px;">Hỗ trợ: hotro@lovin.vn - </span>Holine: 0933 563 599 -&nbsp;(08) 62 966 999</p>
+
+<p>Giấy ph&eacute;p&nbsp;Đăng k&yacute; Kinh doanh Số 0313491797&nbsp;cấp bởi&nbsp;Sở Kế hoạch v&agrave; Đầu tư Th&agrave;nh phố Hồ Ch&iacute; Minh</p>
+
+<p><span style="text-align: center;">Văn ph&ograve;ng: </span>Số 81/18 Huỳnh Văn Nghệ, Phường 12, Quận G&ograve; Vấp, TPHCM, Việt Nam</p>
+
+<p>Kho &amp; Xưởng sản xuất: KP2, Thạnh Xu&acirc;n 25, P. Thạnh Xu&acirc;n, Q.12, TPHCM, Việt Nam</p>
+
+<p><a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=19240" target="_blank" title="Đã Thông Báo Trang TMĐT"><img alt="Đã thông báo với Bộ Công Thương" src="http://lovin.vn/uploads/products/da-thong-bao-bo-cong-thuong.png" /></a></p>    
+</div>
+
+        </div>
+    </footer>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal">
+        <div class="modal-dialog">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	<div class="modal-content"></div>
+        </div>
+    </div>            
+	
+<button type="button" id="btn-scrolltop">
+    <img src="http://lovin.vn/assets/front/img/icon_gototop.png" alt="" title="" class="img-responsive" />
+</button>
+    
+<script type="text/javascript">
+	
+	jQuery(window).scroll(function () {
+		if (jQuery(this).scrollTop() > 10) {
+			jQuery('#btn-scrolltop').fadeIn();
+		} else {
+			jQuery('#btn-scrolltop').fadeOut();
+		}
+	});
+	jQuery('#btn-scrolltop').click(function () {
+		jQuery('body,html').stop(false, false).animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});	
+	
+	
+	
+	
+			$(document).ready(function(){
+			$("#header #hnav-group").sticky({topSpacing:0});
+		});
+	
+
+</script>
+
+<script src="https://clientcdn.pushengage.com/core/5916.js"></script>
+<script>
+_pe.subscribe();
+</script>
+
+<style type="text/css">
+.lovin-messages { position: fixed; bottom: 0; right: 0; z-index: 999999; }
+.lovin-messages-outer { position: relative; }
+#lovin-minimize { background: #5bbd72; font-size: 14px; color: #fff; padding: 3px 10px; position: absolute; top: -34px; left: -1px; border: 1px solid #E9EAED; cursor: pointer; }
+@media screen and (max-width:768px){ #lovin-facebook { opacity:0; } .lovin-messages { bottom: -300px; right: -135px; } }
+@media screen and (min-width:769px){ #lovin-facebook { opacity:0; } .lovin-messages { bottom: -300px; right: -135px; } }
+</style>
+
+<div id='fb-root'></div>
+<script>
+(function($) { $(document).ready(function(){ $( '#lovin-minimize' ).click( function() { if( $( '#lovin-facebook' ).css( 'opacity' ) == 0 ) { $( '#lovin-facebook' ).css( 'opacity', 1 ); $( '.lovin-messages' ).animate( { right: '0' } ).animate( { bottom: '0' } ); } else { $( '.lovin-messages' ).animate( { bottom: '-300px' } ).animate( { right: '-135px' }, 400, function(){ $( '#lovin-facebook' ).css( 'opacity', 0 ) } ); } } ) }); })(jQuery);
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="lovin-messages"><div class="lovin-messages-outer"><div id="lovin-minimize">0933.563.599</div><div id="lovin-facebook" class='fb-page' data-adapt-container-width='true' data-height='300' data-hide-cover='false' data-href='https://www.facebook.com/LOVIN.VN.VIETNAM' data-show-facepile='true' data-show-posts='false' data-small-header='false' data-tabs='messages' data-width='250'></div></div></div>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KGTMZJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KGTMZJ');</script>
+<!-- End Google Tag Manager -->
+
+
+    
 </body>
 </html>
